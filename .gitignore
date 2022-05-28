@@ -178,3 +178,9 @@ cython_debug/
 *.data
 *.zip
 *.pickle
+
+
+# drive temp files
+#  This is a temporary file used by the Google Drive integration.
+#  It is not included in the repository.
+.tmp*
