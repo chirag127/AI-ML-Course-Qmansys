@@ -19,7 +19,7 @@ def assistant_speaks(output):
 
     toSpeak = gTTS(text=output, lang="en", slow=False)
     # saving the audio file given by google text to speech
-    file = str(num) + ".mp3 "
+    file = f"{num}.mp3 "
     toSpeak.save(file)
 
     # playsound package is used to play the same file.
@@ -61,7 +61,7 @@ def process_text(input):
             query = input.split()[indx + 1 :]
             res = client.query(" ".join(query))
             answer = next(res.results).text
-            assistant_speaks("The answer is " + answer)
+            assistant_speaks(f"The answer is {answer}")
             return
 
         elif "open" in input:
@@ -101,35 +101,23 @@ def search_web(input):
         indx = input.lower().split().index("youtube")
         query = input.split()[indx + 1 :]
         driver.get("http://www.youtube.com/results?search_query =" + "+".join(query))
-        return
-
     elif "wikipedia" in input.lower():
 
         assistant_speaks("Opening Wikipedia")
         indx = input.lower().split().index("wikipedia")
         query = input.split()[indx + 1 :]
         driver.get("https://en.wikipedia.org/wiki/" + "_".join(query))
-        return
+    elif "google" in input or "search" in input:
+
+        indx = input.lower().split().index("google")
+        query = input.split()[indx + 1 :]
+        driver.get("https://www.google.com/search?q =" + "+".join(query))
 
     else:
 
-        if "google" in input:
+        driver.get("https://www.google.com/search?q =" + "+".join(input.split()))
 
-            indx = input.lower().split().index("google")
-            query = input.split()[indx + 1 :]
-            driver.get("https://www.google.com/search?q =" + "+".join(query))
-
-        elif "search" in input:
-
-            indx = input.lower().split().index("google")
-            query = input.split()[indx + 1 :]
-            driver.get("https://www.google.com/search?q =" + "+".join(query))
-
-        else:
-
-            driver.get("https://www.google.com/search?q =" + "+".join(input.split()))
-
-        return
+    return
 
 
 # function used to open application
@@ -139,31 +127,24 @@ def open_application(input):
     if "chrome" in input:
         assistant_speaks("Google Chrome")
         os.startfile("C:\Program Files (x86)\Google\Chrome\Application\chrome.exe")
-        return
-
     elif "firefox" in input or "mozilla" in input:
         assistant_speaks("Opening Mozilla Firefox")
         os.startfile("C:\Program Files\Mozilla Firefox\\firefox.exe")
-        return
-
     elif "word" in input:
         assistant_speaks("Opening Microsoft Word")
         os.startfile(
             "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Microsoft Office 2013\\Word 2013.lnk"
         )
-        return
-
     elif "excel" in input:
         assistant_speaks("Opening Microsoft Excel")
         os.startfile(
             "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Microsoft Office 2013\\Excel 2013.lnk"
         )
-        return
-
     else:
 
         assistant_speaks("Application not available")
-        return
+
+    return
 
 
 def get_audio():
@@ -195,7 +176,7 @@ if __name__ == "__main__":
     assistant_speaks("What's your name, Human?")
     name = "Human"
     name = get_audio()
-    assistant_speaks("Hello, " + name + ".")
+    assistant_speaks(f"Hello, {name}.")
 
     while 1:
 
@@ -206,7 +187,7 @@ if __name__ == "__main__":
             continue
 
         if "exit" in str(text) or "bye" in str(text) or "sleep" in str(text):
-            assistant_speaks("Ok bye, " + name + ".")
+            assistant_speaks(f"Ok bye, {name}.")
             break
 
         # calling process text to process the query

@@ -37,7 +37,7 @@ def detect_and_predict_age(frame, faceNet, ageNet, minConf=0.5):
     detections = faceNet.forward()
 
     # loop over the detections
-    for i in range(0, detections.shape[2]):
+    for i in range(detections.shape[2]):
         # extract the confidence (i.e., probability) associated with
         # the prediction
         confidence = detections[0, 0, i, 2]
@@ -137,7 +137,7 @@ while True:
         # predicted age
         text = "{}: {:.2f}%".format(r["age"][0], r["age"][1] * 100)
         (startX, startY, endX, endY) = r["loc"]
-        y = startY - 10 if startY - 10 > 10 else startY + 10
+        y = startY - 10 if startY > 20 else startY + 10
         cv2.rectangle(frame, (startX, startY), (endX, endY), (0, 0, 255), 2)
         cv2.putText(
             frame, text, (startX, y), cv2.FONT_HERSHEY_SIMPLEX, 0.45, (0, 0, 255), 2

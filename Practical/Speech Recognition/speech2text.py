@@ -42,7 +42,7 @@ while 1:
             MyText = r.recognize_google(audio2)
             MyText = MyText.lower()
 
-            print("Did you say " + MyText)
+            print(f"Did you say {MyText}")
             SpeakText(MyText)
 
     except sr.RequestError as e:

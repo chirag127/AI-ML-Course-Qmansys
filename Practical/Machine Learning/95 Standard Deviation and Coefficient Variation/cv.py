@@ -14,7 +14,7 @@ import math
 def mean(arr, n):
     sum = 0
 
-    for i in range(0, n):
+    for i in range(n):
         sum = sum + arr[i]
     return sum / n
 
@@ -24,7 +24,7 @@ def mean(arr, n):
 def standardDeviation(arr, n):
     sum = 0
 
-    for i in range(0, n):
+    for i in range(n):
         sum = sum + (arr[i] - mean(arr, n)) * (arr[i] - mean(arr, n))
 
     return math.sqrt(sum / (n - 1))
