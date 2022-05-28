@@ -1,10 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Tue May  5 07:55:02 2020
-
-@author: Bijoy Pal
-"""
-
 from scipy.stats import norm
 import numpy as np
 import matplotlib.pyplot as plt
