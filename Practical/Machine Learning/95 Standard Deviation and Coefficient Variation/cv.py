@@ -13,17 +13,17 @@ import math
 # given array. 
 def mean(arr, n): 
 	sum = 0
-	
-	for i in range(0, n): 
-		sum = sum + arr[i] 
+
+	for i in range(n): 
+		sum = sum + arr[i]
 	return (sum / n) 
 
 # Function to find standard 
 # deviation of given array. 
 def standardDeviation(arr, n): 
 	sum = 0
-	
-	for i in range(0, n): 
+
+	for i in range(n): 
 		sum = (sum + (arr[i] - mean(arr, n)) *
 					(arr[i] - mean(arr, n))) 
 

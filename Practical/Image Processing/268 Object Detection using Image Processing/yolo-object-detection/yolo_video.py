@@ -54,10 +54,8 @@ try:
 	prop = cv2.cv.CV_CAP_PROP_FRAME_COUNT if imutils.is_cv2() \
 		else cv2.CAP_PROP_FRAME_COUNT
 	total = int(vs.get(prop))
-	print("[INFO] {} total frames in video".format(total))
+	print(f"[INFO] {total} total frames in video")
 
-# an error occurred while trying to determine the total
-# number of frames in the video file
 except:
 	print("[INFO] could not determine # of frames in video")
 	print("[INFO] no approx. completion time can be provided")
@@ -111,7 +109,7 @@ while True:
 				# actually returns the center (x, y)-coordinates of
 				# the bounding box followed by the boxes' width and
 				# height
-				box = detection[0:4] * np.array([W, H, W, H])
+				box = detection[:4] * np.array([W, H, W, H])
 				(centerX, centerY, width, height) = box.astype("int")
 
 				# use the center (x, y)-coordinates to derive the top

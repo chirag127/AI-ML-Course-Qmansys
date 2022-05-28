@@ -48,7 +48,7 @@ faceNet.setInput(blob)
 detections = faceNet.forward()
 
 # loop over the detections
-for i in range(0, detections.shape[2]):
+for i in range(detections.shape[2]):
 	# extract the confidence (i.e., probability) associated with the
 	# prediction
 	confidence = detections[0, 0, i, 2]
@@ -78,11 +78,11 @@ for i in range(0, detections.shape[2]):
 
 		# display the predicted age to our terminal
 		text = "{}: {:.2f}%".format(age, ageConfidence * 100)
-		print("[INFO] {}".format(text))
+		print(f"[INFO] {text}")
 
 		# draw the bounding box of the face along with the associated
 		# predicted age
-		y = startY - 10 if startY - 10 > 10 else startY + 10
+		y = startY - 10 if startY > 20 else startY + 10
 		cv2.rectangle(image, (startX, startY), (endX, endY),
 			(0, 0, 255), 2)
 		cv2.putText(image, text, (startX, y),

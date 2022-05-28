@@ -15,13 +15,13 @@ def assistant_speaks(output):
 	num += 1
 	print("PerSon : ", output) 
 
-	toSpeak = gTTS(text = output, lang ='en', slow = False) 
-	# saving the audio file given by google text to speech 
-	file = str(num)+".mp3 "
+	toSpeak = gTTS(text = output, lang ='en', slow = False)
+	# saving the audio file given by google text to speech
+	file = f"{num}.mp3 "
 	toSpeak.save(file) 
-	
+
 	# playsound package is used to play the same file. 
-	playsound.playsound(file, True) 
+	playsound.playsound(file, True)
 	os.remove(file) 
 
 def process_text(input): 
@@ -54,15 +54,15 @@ def process_text(input):
 			app_id = "WOLFRAMALPHA_APP_ID"
 			client = wolframalpha.Client(app_id) 
 
-			indx = input.lower().split().index('calculate') 
-			query = input.split()[indx + 1:] 
-			res = client.query(' '.join(query)) 
-			answer = next(res.results).text 
-			assistant_speaks("The answer is " + answer) 
+			indx = input.lower().split().index('calculate')
+			query = input.split()[indx + 1:]
+			res = client.query(' '.join(query))
+			answer = next(res.results).text
+			assistant_speaks(f"The answer is {answer}")
 			return
 
 		elif 'open' in input: 
-			
+
 			# another function to open 
 			# different application availaible 
 			open_application(input.lower()) 
@@ -84,45 +84,33 @@ def process_text(input):
 			search_web(input) 
 def search_web(input): 
 
-	driver = webdriver.Firefox() 
-	driver.implicitly_wait(1) 
+	driver = webdriver.Firefox()
+	driver.implicitly_wait(1)
 	driver.maximize_window() 
 
 	if 'youtube' in input.lower(): 
 
-		assistant_speaks("Opening in youtube") 
-		indx = input.lower().split().index('youtube') 
-		query = input.split()[indx + 1:] 
-		driver.get("http://www.youtube.com/results?search_query =" + '+'.join(query)) 
-		return
-
+		assistant_speaks("Opening in youtube")
+		indx = input.lower().split().index('youtube')
+		query = input.split()[indx + 1:]
+		driver.get("http://www.youtube.com/results?search_query =" + '+'.join(query))
 	elif 'wikipedia' in input.lower(): 
 
-		assistant_speaks("Opening Wikipedia") 
-		indx = input.lower().split().index('wikipedia') 
+		assistant_speaks("Opening Wikipedia")
+		indx = input.lower().split().index('wikipedia')
+		query = input.split()[indx + 1:]
+		driver.get("https://en.wikipedia.org/wiki/" + '_'.join(query))
+	elif 'google' in input or 'search' in input: 
+
+		indx = input.lower().split().index('google') 
 		query = input.split()[indx + 1:] 
-		driver.get("https://en.wikipedia.org/wiki/" + '_'.join(query)) 
-		return
+		driver.get("https://www.google.com/search?q =" + '+'.join(query)) 
 
 	else: 
 
-		if 'google' in input: 
+		driver.get("https://www.google.com/search?q =" + '+'.join(input.split())) 
 
-			indx = input.lower().split().index('google') 
-			query = input.split()[indx + 1:] 
-			driver.get("https://www.google.com/search?q =" + '+'.join(query)) 
-
-		elif 'search' in input: 
-
-			indx = input.lower().split().index('google') 
-			query = input.split()[indx + 1:] 
-			driver.get("https://www.google.com/search?q =" + '+'.join(query)) 
-
-		else: 
-
-			driver.get("https://www.google.com/search?q =" + '+'.join(input.split())) 
-
-		return
+	return
 
 
 # function used to open application 
@@ -130,29 +118,22 @@ def search_web(input):
 def open_application(input): 
 
 	if "chrome" in input: 
-		assistant_speaks("Google Chrome") 
-		os.startfile('C:\Program Files (x86)\Google\Chrome\Application\chrome.exe') 
-		return
-
+		assistant_speaks("Google Chrome")
+		os.startfile('C:\Program Files (x86)\Google\Chrome\Application\chrome.exe')
 	elif "firefox" in input or "mozilla" in input: 
-		assistant_speaks("Opening Mozilla Firefox") 
-		os.startfile('C:\Program Files\Mozilla Firefox\\firefox.exe') 
-		return
-
+		assistant_speaks("Opening Mozilla Firefox")
+		os.startfile('C:\Program Files\Mozilla Firefox\\firefox.exe')
 	elif "word" in input: 
-		assistant_speaks("Opening Microsoft Word") 
-		os.startfile('C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Microsoft Office 2013\\Word 2013.lnk') 
-		return
-
+		assistant_speaks("Opening Microsoft Word")
+		os.startfile('C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Microsoft Office 2013\\Word 2013.lnk')
 	elif "excel" in input: 
-		assistant_speaks("Opening Microsoft Excel") 
-		os.startfile('C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Microsoft Office 2013\\Excel 2013.lnk') 
-		return
-
+		assistant_speaks("Opening Microsoft Excel")
+		os.startfile('C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Microsoft Office 2013\\Excel 2013.lnk')
 	else: 
 
-		assistant_speaks("Application not available") 
-		return
+		assistant_speaks("Application not available")
+
+	return
 
 
 def get_audio(): 
@@ -181,22 +162,22 @@ def get_audio():
   
 # Driver Code 
 if __name__ == "__main__": 
-    assistant_speaks("What's your name, Human?") 
-    name ='Human'
-    name = get_audio() 
-    assistant_speaks("Hello, " + name + '.') 
-      
-    while(1): 
-  
-        assistant_speaks("What can i do for you?") 
-        text = get_audio().lower() 
-  
-        if text == 0: 
-            continue
-  
-        if "exit" in str(text) or "bye" in str(text) or "sleep" in str(text): 
-            assistant_speaks("Ok bye, "+ name+'.') 
-            break
-  
-        # calling process text to process the query 
-        process_text(text) 
+	assistant_speaks("What's your name, Human?")
+	name ='Human'
+	name = get_audio()
+	assistant_speaks(f"Hello, {name}.") 
+
+	while 1: 
+	  
+		assistant_speaks("What can i do for you?")
+		text = get_audio().lower() 
+
+		if text == 0: 
+		    continue
+
+		if "exit" in str(text) or "bye" in str(text) or "sleep" in str(text): 
+			assistant_speaks(f"Ok bye, {name}.")
+			break
+
+		# calling process text to process the query 
+		process_text(text) 
