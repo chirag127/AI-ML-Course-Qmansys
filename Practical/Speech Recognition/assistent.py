@@ -37,19 +37,15 @@ def process_text(input):
         elif "who are you" in input or "define yourself" in input:
             speak = """Hello, I am Person. Your personal Assistant. 
 			I am here to make your life easier. You can command me to perform 
-			various tasks such as calculating sums or opening applications etcetra"""
+			various tasks such as calculating sums or opening applications etcetera"""
             assistant_speaks(speak)
             return
 
         elif "who made you" in input or "created you" in input:
-            speak = "I have been created by Qmansys."
+            speak = "I have been created by chirag."
             assistant_speaks(speak)
             return
 
-        elif "Qmansys" in input:  # just
-            speak = """Qmansys is best iot solution provider."""
-            assistant_speaks(speak)
-            return
 
         elif "calculate" in input.lower():
 
@@ -57,8 +53,8 @@ def process_text(input):
             app_id = "WOLFRAMALPHA_APP_ID"
             client = wolframalpha.Client(app_id)
 
-            indx = input.lower().split().index("calculate")
-            query = input.split()[indx + 1 :]
+            index = input.lower().split().index("calculate")
+            query = input.split()[index + 1 :]
             res = client.query(" ".join(query))
             answer = next(res.results).text
             assistant_speaks(f"The answer is {answer}")
@@ -67,7 +63,7 @@ def process_text(input):
         elif "open" in input:
 
             # another function to open
-            # different application availaible
+            # different application available
             open_application(input.lower())
             return
 
@@ -98,19 +94,19 @@ def search_web(input):
     if "youtube" in input.lower():
 
         assistant_speaks("Opening in youtube")
-        indx = input.lower().split().index("youtube")
-        query = input.split()[indx + 1 :]
+        index = input.lower().split().index("youtube")
+        query = input.split()[index + 1 :]
         driver.get("http://www.youtube.com/results?search_query =" + "+".join(query))
     elif "wikipedia" in input.lower():
 
         assistant_speaks("Opening Wikipedia")
-        indx = input.lower().split().index("wikipedia")
-        query = input.split()[indx + 1 :]
+        index = input.lower().split().index("wikipedia")
+        query = input.split()[index + 1 :]
         driver.get("https://en.wikipedia.org/wiki/" + "_".join(query))
     elif "google" in input or "search" in input:
 
-        indx = input.lower().split().index("google")
-        query = input.split()[indx + 1 :]
+        index = input.lower().split().index("google")
+        query = input.split()[index + 1 :]
         driver.get("https://www.google.com/search?q =" + "+".join(query))
 
     else:

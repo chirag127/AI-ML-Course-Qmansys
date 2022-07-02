@@ -38,7 +38,7 @@ while 1:
             # listens for the user's input
             audio2 = r.listen(source2)
 
-            # Using ggogle to recognize audio
+            # Using google to recognize audio
             MyText = r.recognize_google(audio2)
             MyText = MyText.lower()
 
@@ -49,4 +49,4 @@ while 1:
         print("Could not request results; {0}".format(e))
 
     except sr.UnknownValueError:
-        print("unknown error occured")
+        print("unknown error occurred")
