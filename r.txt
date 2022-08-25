@@ -6,3 +6,4 @@ wolframalpha
 SpeechRecognition
 black[jupyter]
 keras-datasets
+bioinfokit
