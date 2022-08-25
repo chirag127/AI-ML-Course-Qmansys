@@ -5,29 +5,30 @@ Created on Sun May  3 08:07:20 2020
 @author: Bijoy Pal
 """
 
-# Python program to 
-# demonstrate instantiating 
-# a class 
+# Python program to
+# demonstrate instantiating
+# a class
 
 
-class Dog: 
-	
-	# A simple class 
-	# attribute 
-	attr1 = "mamal"
-	attr2 = "dog"
+class Dog:
 
-	# A sample method 
-	def fun(self): 
-		print("I'm a", self.attr1) 
-		print("I'm a", self.attr2) 
+    # A simple class
+    # attribute
+    attr1 = "mamal"
+    attr2 = "dog"
 
-# Driver code 
-# Object instantiation 
-Rodger = Dog() 
+    # A sample method
+    def fun(self):
+        print("I'm a", self.attr1)
+        print("I'm a", self.attr2)
 
-# Accessing class attributes 
-# and method through objects 
-print(Rodger.attr1) 
-print(Rodger.attr2) 
-Rodger.fun() 
+
+# Driver code
+# Object instantiation
+Rodger = Dog()
+
+# Accessing class attributes
+# and method through objects
+print(Rodger.attr1)
+print(Rodger.attr2)
+Rodger.fun()
