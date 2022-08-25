@@ -151,30 +151,29 @@ cython_debug/
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
 *.h5
-
-*.xml
-*.json
-*.dat
-*.feat
-*.csv
-*.jfif
-*.png
-*.pdf
-*.docx
-*.vocab
-*.jpeg
-*.avi
-*.mp4
+*.pickle
 *.caffemodel
 *.model
-*.svg
-*.xlsx
-*.dot
-*.npy
 *.data
-*.zip
-*.pickle
 
+# *.xml
+# *.json
+# *.dat
+# *.feat
+# *.csv
+# *.jfif
+# *.png
+# *.pdf
+# *.docx
+# *.vocab
+# *.jpeg
+# *.avi
+# *.mp4
+# *.svg
+# *.xlsx
+# *.dot
+# *.npy
+# *.zip
 
 # drive temp files
 #  This is a temporary file used by the Google Drive integration.
