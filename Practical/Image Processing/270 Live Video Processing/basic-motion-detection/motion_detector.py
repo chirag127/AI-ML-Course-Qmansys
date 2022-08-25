@@ -77,13 +77,14 @@ while True:
     # draw the text and timestamp on the frame
     cv2.putText(
         frame,
-        "Room Status: {}".format(text),
+        f"Room Status: {text}",
         (10, 20),
         cv2.FONT_HERSHEY_SIMPLEX,
         0.5,
         (0, 0, 255),
         2,
     )
+
     cv2.putText(
         frame,
         datetime.datetime.now().strftime("%A %d %B %Y %I:%M:%S%p"),
