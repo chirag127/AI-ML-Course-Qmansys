@@ -7,3 +7,14 @@ SpeechRecognition
 black[jupyter]
 keras-datasets
 bioinfokit
+keras
+numpy
+scipy
+sklearn
+wheel
+nltk
+pip-review
+tweepy
+pydotplus
+textblob
+graphviz
