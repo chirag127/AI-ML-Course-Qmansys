@@ -35,8 +35,8 @@ def process_text(input):
             return
 
         elif "who are you" in input or "define yourself" in input:
-            speak = """Hello, I am Person. Your personal Assistant. 
-			I am here to make your life easier. You can command me to perform 
+            speak = """Hello, I am Person. Your personal Assistant.
+			I am here to make your life easier. You can command me to perform
 			various tasks such as calculating sums or opening applications etcetra"""
             assistant_speaks(speak)
             return
@@ -68,7 +68,7 @@ def process_text(input):
 
             # another function to open
             # different application availaible
-            open_application(input.lower())
+            open_app(input.lower())
             return
 
         else:
@@ -79,8 +79,8 @@ def process_text(input):
                 search_web(input)
             else:
                 return
-    except:
-
+    except Exception as error: # pylint: disable=broad-except
+        print(error)
         assistant_speaks(
             "I don't understand, I can search the web for you, Do you want to continue?"
         )
@@ -119,35 +119,42 @@ def search_web(input):
 
     return
 
+import subprocess, sys
+def open_application(input):
+
+    opener = "open" if sys.platform == "darwin" else "xdg-open"
+
+
+    subprocess.call([opener, input])
+
 
 # function used to open application
 # present inside the system.
-def open_application(input):
+def open_app(input):
 
     if "chrome" in input:
         assistant_speaks("Google Chrome")
-        os.startfile("C:\Program Files (x86)\Google\Chrome\Application\chrome.exe")
+        open_application("C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe")
     elif "firefox" in input or "mozilla" in input:
         assistant_speaks("Opening Mozilla Firefox")
-        os.startfile("C:\Program Files\Mozilla Firefox\\firefox.exe")
+        open_application("C:\\Program Files\\Mozilla Firefox\\firefox.exe")
     elif "word" in input:
         assistant_speaks("Opening Microsoft Word")
-        os.startfile(
-            "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Microsoft Office 2013\\Word 2013.lnk"
-        )
+        open_application("C:\\Program Files\\Microsoft Office\\root\\Office16\\WINWORD.EXE")
     elif "excel" in input:
         assistant_speaks("Opening Microsoft Excel")
-        os.startfile(
-            "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Microsoft Office 2013\\Excel 2013.lnk"
-        )
+        open_application("C:\\Program Files\\Microsoft Office\\root\\Office16\\EXCEL.EXE")
     else:
-
         assistant_speaks("Application not available")
 
     return
 
 
 def get_audio():
+    """
+    It records audio from the microphone, converts it into text and returns it
+    :return: The text that is being spoken by the user.
+    """
 
     rObject = sr.Recognizer()
     audio = ""
@@ -160,13 +167,11 @@ def get_audio():
     print("Stop.")  # limit 5 secs
 
     try:
-
         text = rObject.recognize_google(audio, language="en-US")
         print("You : ", text)
         return text
 
-    except:
-
+    except Exception:
         assistant_speaks("Could not understand your audio, PLease try again !")
         return 0
 

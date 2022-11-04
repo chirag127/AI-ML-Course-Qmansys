@@ -1,5 +1,5 @@
 gtts
-playsound==1.2.2
+playsound
 python_speech_features
 selenium
 wolframalpha
@@ -22,3 +22,4 @@ ipywidgets
 opencv-python
 opencv-python-headless
 scikit-image
+tensorflow
