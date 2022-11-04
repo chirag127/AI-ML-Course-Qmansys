@@ -1,0 +1,3847 @@
+");
+        $this->assertTrue(true);
+    }
+
+    public function test_it_can_be_constructed()
+    {
+        $this->assertInstanceOf(
+            '\GeminiLabs\SiteReviews\Modules\Html\Builder',
+            new Builder
+        );
+    }
+}"
++
++
++if __name__ == '__main__':
++    app.run()
++
+" to a file called "helloworld.txt"
+
+// in your node_modules/@types folder
+// declare module "hello-world-npm" {
+//     export function hello(name: string): void;
+// }
+
+// import {hello} from "hello-world-npm";
+// hello("TypeScript");');
++    });
++
++    it('should have a method called getVacationDays', function() {
++      expect(employee.getVacationDays).to.be.a('function');
++    });
++
++    it('should return 20 for getVacationDays', function() {
++      expect(employee.getVacationDays()).to.equal(20);
++    });
++
++    it('should have a method called getVacationForm that returns a string', function() {
++      expect(employee.getVacationForm).to.be.a('function');
++      expect(employee.getVacationForm()).to.be.a('string');
++    });
++
++  });
++
++  describe('Manager', function() {
++    var manager;
++    beforeEach(function() {
++      manager = new Manager('Foo', 'employee', '1234', 'foo@bar.com');
++    });
++
++    it('should have a method called getVacationDays', function() {
++      expect(manager.getVacationDays).to.be.a('function');
++    });
++
++    it('should return 25 for getVacationDays', function() {
++      expect(manager.getVacationDays()).to.equal(25);
++    });
++
++    it('should have a method called acceptApplication that returns true', function() {
++      expect(manager.acceptApplication).to.be.a('function');
++      expect(manager.acceptApplication()).to.be.true;
++    });
++
++    it('should have a method called denyApplication that returns a string', function() {
++      expect(manager.denyApplication).to.be.a('function');
++      expect(manager.denyApplication()).to.be.a('string');
++    });
++  });
++
++  describe('Intern', function() {
++    var intern;
++    beforeEach(function() {
++      intern = new Intern('Foo', 'employee', '1234', 'foo@bar.com');
++    });
++
++    it('should have a school property', function() {
++      expect(intern.school).to.equal('');
++    });
++
++    it('should have a method called getSchool', function() {
++      expect(intern.getSchool).to.be.a('function');
++    });
++
++    it('should return school for getSchool', function() {
++      expect(intern.getSchool()).to.equal(intern.school);
++    });
++
++    it('should have a method called getRole that returns "Intern"', function() {
++      expect(intern.getRole).to.be.a('function');
++      expect(intern.getRole()).to.equal('Intern');
++    });
++  });
++
++  describe('Engineer', function() {
++    var engineer;
++    beforeEach(function() {
++      engineer = new Engineer('Foo', 'employee', '1234', 'foo@bar.com');
++    });
++
++    it('should have a github property', function() {
++      expect(engineer.github).to.equal('');
++    });
++
++    it('should have a method called getGithub', function() {
++      expect(engineer.getGithub).to.be.a('function');
++    });
++
++    it('should return github for getGithub', function() {
++      expect(engineer.getGithub()).to.equal(engineer.github);
++    });
++
++    it('should have a method called getRole that returns "Engineer"', function() {
++      expect(engineer.getRole).to.be.a('function');
++      expect(engineer.getRole()).to.equal('Engineer');
++    });
++  });
++
++});
+")
++```
++
++## Or you can use the CLI to run a file
++
++```
++$ go run hello.go
++```
++
++## Or you can build a binary
++
++```
++$ go build hello.go
++```
++
++## Or you can install a binary
++
++```
++$ go install hello.go
++```
+
+
+#include<stdio.h>
+
+void main()
+{
+	printf("Hello World");
+	
+}
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello world
+
+write a python program to print hello "Python For Beginners : Hello World python program"3.write a python program to SumOfTwoDigits "write a python program to SumOfTwoDigits"4.write a python program to….
+
+.NET Core Recipes – Packt
+
+Alberto Ferrari – SQLBI Alberto Ferrari is BI consultant, speaker and trainer. He's founder and mentor of SQLBI.com, the hub for Power BI, SSAS Tabular, DAX and data modeling. He is an.
+print("hello world")
+
+#take two numbers from the user and print there sum
+
+inputarr = list(map(int,input().split()))
+
+print(sum(inputarr))
+
+#take input from the user to calculate sum and print results
+
+li =[]
+
+inputarr = (input().split())
+
+print(inputarr)
+
+for i in range(0,len(inputarr)):
+    li.append(int(inputarr[i]))
+sum =0
+for j in li:
+    sum+=j
+print(sum)
+#check if a string is pallendorm or not
+reverse=[]
+input1 = input("Enter a string")
+print("input string is :",input1)
+for i in range(len(input1)-1,-1,-1):
+    reverse.append(input1[i])
+if(input1=="".join(reverse)):
+    print("pallendorm")
+else:
+    print("to aage wala")
+
+#reverse a number
+#way1
+
+input=int(input("Enter a number"))
+reverse=0
+while(input>0):
+    rem=input%10
+    #print("reverse --",reverse)
+    reverse=reverse*10+rem
+    #print("number    --",input)
+    input=input//10
+print(reverse)
+
+# palenndorm of a no
+
+n = int(input("Enter a number:"))
+sum =0
+temp = n
+while (n> 0):
+  digit = n % 10
+  sum  = sum * 10 + digit
+  n //= 10
+if (temp== sum):
+  print(temp, "is a palindrome!")
+else:
+  print(temp, "is not a palindrome!")
+
+#check prime of a no or not
+n=int(input("Enter a number:"))
+for i in range(2,n):
+    if(n%i==0):
+        print("not a prime no")
+        break
+else:
+        print("prime no")
+#take an integer from the user,print a table
+input=int(input("enter a number"))
+i=1
+while i<=10:
+    print(i*input,end="\t")
+    i=i+1
+print(" ")
+print("another way")
+#way 2
+
+for i in range(1,11):
+    print(i*input,end=" ")
+print(" ")
+i=1
+print("using while and if condition")
+while(i<=10):
+    if(i==5):
+        i=i+1
+        continue
+    print(i*input,end=" ")
+    i=i+1
+print(" ")
+print("printing table of the 5 to 9 nos with that number")
+tableno=5
+while (tableno<=9):
+    for i in range(1,11):
+        print(tableno*i,end=" ")
+    print(" ")
+    tableno=tableno+1
+#print patterns
+input=int(input("enter a number or length of pattern u wanna to print"))
+for i in range(input):
+    print("* "*i,end=" ")
+    print(" ")
+for i in range(9):
+    print("* "*i,end=" ")
+    print(" ")
+print("pattern below")
+
+for i in range(9,0,-1):
+    print("* "*i,end=" ")
+    print(" ")
+for i in range(9,0,-1):
+    print("* "*i,end=" ")
+    print(" ")
+print("  ")
+
+# multiply by 10 to 5
+inp=5
+for i in range(1,11):
+    print(inp*i,end=" ")
+print("  ")
+
+for i in range(0,4):
+    for j in range(0,i+1):
+        print("* ",end="")
+    print("   ")
+for i in range(5,0,-1):
+    for j in range(0,i-1):
+        print("* ",end=" ")
+    print(" ")
+print(" ")
+
+print("adder and subtraction")
+i=1
+add=0
+while(i<=5):
+    sum=add+i
+    print(sum)
+    add=sum
+    i=i+2
+for i in range(1,6):
+    for j in range(1,i+1):
+        print(j, end=" ")
+    print(" ")
+
+print("hello")
+import csv
+with open('data.txt',"a") as f:
+    print("hell")
+    writer = csv.writer(f)
+    writer.writerow(["harihar","170141104057","chabutra"])
+    writer.writerow(["samad","170141104058","chabutra"])
+    writer.writerow(["vedha","170130104058","chabutra"])
+import csv, os
+with open('data.txt', "a") as csvfile:
+    writer = csv.writer(csvfile) 
+    # get the number of rows in the existing csv
+    reader = csv.reader(csvfile)
+    for row in reader:
+        i = reader.line_num        
+    # get the data to write in the row, exempie below:
+    APP_NAME = "app name"
+    APP_VERSION = "app version"
+    APP_ID = "app ID"
+    # write the data in the new row
+    writer.writerow([APP_ID, APP_NAME, APP_VERSION])
+    print("App added")
+else:
+    print("looks like it was successful, but we can't check")
+#fibinocci using recursion
+
+def fibo(n):
+    if n== 1 or n==2:
+        fibonacci=1
+    else:
+        return fibo(n-1)+fibo(n-2)
+    return fibonacci
+
+n=4
+nlist=list(range(1,n+1))
+
+answer =[]
+answer = map(fibo,nlist)
+print(list(answer))
+print("using for Loop ")
+def fibo(n):
+    print(n)
+    a=0
+    b =1
+    print(a)
+    print(b,end=" ")
+    for i in range(3,n):
+        print(i)
+        c=a+b
+        print(c,end=" ")
+        a=b
+        b=c
+fibo(5)
+#fibbo in range(lo and hi)
+def fibinoccegi(lo,hi):
+    i=lo
+    while i<=hi:
+        print(i, end=" "),
+        lo=lo+i
+        i=lo
+lo=int(input(" "))
+hi=int(input(" "))
+fibinoccegi(lo,hi)
+# using list in python
+a=[1,2,3,4,5,7,8,9 ]
+b=[10,20,30,40,50]
+for i in a:
+    for j in b:
+        print(a*b,end=" ")
+    print(" ")
+for i in b:
+    for j in a:
+        print(b*a,end=" ")
+    print(" ")
+for i in range(1,50,5):
+    print(i)
+#print fizz Buzz in range(100)
+for x in range(1,101):
+    print("",x,end=" ")
+    if (x%5==0 and x%3==0):
+        print("FizzBuzz",end=" ")
+    elif(x%3==0):
+        print("Fizz",end=" ")
+    elif (x%5==0):
+        print("Buzz",end=" ")
+
+#given an array print the sum of elements of the array
+import array;
+sample_array = array.array('i', [326, 302-100])
+print("Sum of the sample array elements is(savage)", sum(sample_array))
+
+#Merge Write a program to merge two arrays.
+
+arr1= [input("Enter Your ") for i in range(5)]
+arr2= [input("Enter Your ") for i in range(5)]
+for i in arr2:
+    arr1.append(i)
+print(arr1)
+
+def search(nums,target):
+    if(target!=nums):
+        return -1
+    return nums.index(nums)
+
+nums=[4,5,6,7,0,1,2]
+target= 5
+search(nums,target)
+#find their avg in a nested list
+from statistics import mean
+x = [[ 4 ,5 , 6] , [ 7 , 8 , 9 ] ]
+for i in x:
+    print(i,end =" ");print(" ")
+print("avg:",round(mean(x)))
+#printing a vector with its sum in a dual list
+u = [[3,2,3],[1,1,-1]]
+v = [[4,2,3],[1,1,-1]]
+w = [[5,4,6],[2,2,-2]]
+for i in v:
+    print(i,end =" ");print(" ")
+print("avg:",round(sum(v)))
+#question  in the group
+import random
+a=[0,1,2,3,4,5]
+b=random.shuffle(a)
+print(a)
+c= [i for i in a if i != random.choice(a)]
+print(c)
+c.append(sum(c))
+print(c)
+#question in the group
+n=7
+sum1=0
+while n>0:
+    print("* "*n)
+    sum1+=n
+    n=n-1
+print(sum1)
+#sorting list with in 35 sec
+import shutil.headers,timr
+starttime = time.perf_counter()
+def selection():
+    ar=[]
+    arr = list((input("Enter the elements of array").split()))
+    for i in arr:
+        ar.append(i)
+    for i in range(0,len(ar)-1):
+        min=i
+        for j in range(i+1,len(ar)):
+            if(ar[j]<a[min]):
+                min=j
+        if(min!=i):
+            temp=a[i]
+            ar[i]=a[min]
+            ar[min]=temp
+    print(ar, end=" ")
+    print(" ")
+    hours = (time.perf_counter() - start_time) / 3600
+    min = (time.perf_counter() - start_time) / 60
+    sec = (time.perf_counter() - start_time)
+    print("sort is successful and time completes")
+       
+selection()
+hours = (time.perf_counter() - start_time) / 3600
+min = (time.perf_counter() - start_time) / 60
+sec = (time.perf_counter() - start_time)
+
+print("--- %s hours ---" % hours)
+print("literaly %s minutes" % minutes)
+print("--- %s seconds ---" % seconds)
+()
+submission code in piroples
+print("submission code in the github")
+for i in range(10):
+    print(i,end=" ")
+print(" ")
+
+print("submission code in the github")
+n=7
+sumlis=0
+for i in range(n):
+    sumlis=sumlis+(n-i)
+    print(""*(n-i)+"* "*(n-i))#to change
+print(sumlis)
+#submission14
+import time,random
+a= random.randint(1,11)
+print(a)
+starttime = time.perf_counter()
+sub= (time.perf_counter() - start_time) / 60
+if(sub>60):
+    print(" attempt again")
+else:
+    print("1st attempt successful")
+    count=1
+    n=int(input("user entered number"))
+    while(n!=a):
+        print("try again")
+        count=count+1
+        print(count,end=" ")
+        sub= (time.perf_counter() - start_time) / 60
+        print(sub,end=" ")
+        if(sub>60):
+            print("u r done")
+            break
+        else:
+            print("")
+            n=int(input("user entered number"))
+    if(n==a):
+        print("you are rright:actual number is:",end=" ")
+        print(a, end=" ")
+        print(sub)
+        print("numbers of attempts u did is:",end=" ")
+        print(count)
+from random import*
+from hackingtools.thinking import *
+from IPython import embed
+from secretcodes.listconversionusernames import USERNAMES, USERNAMESLIST, WORDSLIST
+from secretcodes.listconversioncategories import *
+from secretcodes.userfilecode import *
+from secretcodes.webscrapercode import *
+from secretcodes.fizzbuzz import *
+from secretcodes.doubletrouble import *
+from secretcodes.pyramidofstars import *
+from secretcodes.digitally import *
+from secretcodes.doublyfun import *
+from secretcodes.fetchjson import *
+from secretcodes.table import *
+from secretcodes.listpattern import *
+from secretcodes.randomlist import *
+from secretcodes.userinput import *
+from secretcodes.using import *
+from secretcodes.listpattern import *
+from secretcodes.randomlist import *
+from secretcodes.createfile import *
+from secretcodes import secretcode
+from secretcodes import listconversionusernames
+from secretcodes import listconversioncategories
+from secretcodes.matrix import *
+from secretcodes.builtin import *
+from secretcodes.tictactoe import *
+from secretcodes.hangman import *
+from secretcodes.userfilecode import *
+from secretcodes.posso import *
+from secretcodes.linked import *
+from secretcodes.singly import *
+from secretcodes.doubly import *
+from secretcodes.doubly2 import *
+from secretcodes.threes import *
+from secretcodes.rotate import *
+from secretcodes.cluster import *
+from secretcodes.hamming import *
+from secretcodes.sortedlist import *
+from secretcodes.merge import *
+from secretcodes.collatz import *
+from secretcodes.recur import *
+from secretcodes.complete import *
+from secretcodes.snippet import *
+from secretcodes.lucky import *
+
+def recur(target):
+    return target[:-1
+                  ], target [1: ]
+
+import random
+user_def = random.randint(5,10)
+list_list = [[random.randint(-10,10) for count in range(user_def) ] for target in range(user_def)]
+for targetx in list_list:
+    print("your enter is:", targetx)
+
+s = {-1,1,1,1,1,2,-2,-2}
+print("original list is:",s)
+i=0
+while i<len(s):
+    list_list=random.sample(s,1);
+    if(sum(list_list)==0):
+        print("your asked sum is:",list_list)
+    i=i+1
+s = {-1,1,1,1,1,2,-2,-2}
+print("original list is:",s)
+#We wnat to deal with each number in the sample,so let's make a copy of the list, then process each from the sample
+
+list_list=list(s)
+i=0
+while i<len(list_list):
+    element=list_list[i]
+    list_list.remove(element)
+    list_list.remove(-1*element)
+    s.pop(element)
+    s.pop(-1*element)
+    if(-element in list_list):
+        print(" pairs include ", element, -element, sep=",")
+    i=i+1
+import os
+
+with open("sampleprograms.txt","w") as instant:
+    instant.write("hello world")
+
+os.remove("sampleprograms.txt")
+import os
+with open("demofiles.txt","w") as instant:
+    instant.write("hello there")
+os.remove("demofiles.txt")
+import os
+with open("demofiles.txt","w") as instant:
+    instant.write("deleting file worlkd")
+os.remove("demofiles.txt")
+## Question 2
+
+write a python program to check if a number is zero or naught. 
+save it as zero.py in your Desktop/scratch folder. 
+change the text editor type to Python in properties box and click OK. 
+run the activity to test the output. print("Hello World!")
+
+# 2.Write a Python program to input name , roll no and find sum of digits of t
+
+# write a python program find area and perimeter of a pointer##File Handling##
+# open() function is file handling function
+# Syntax: open(filename, accessmode, buffering)
+# filename-- name of file
+# accessmode-- mode used
+# buffer-- is used to set up buffer size
+#what are the access mode to file
+#1. read(the file can only be read)
+#2. write(the file can be only write)
+#3. readbyte (the file is opened in binary read)
+#4.writebyte(the file is opened in binary write)
+#5.append(the file is in append mode)
+#6. read update(first reads into buffer then write it)
+#7. write updating
+#Example to mode of files
+fo=open("sample.txt",'r')     # opens file sample.txt in read mode (read mode is default)
+#where r is line 1
+#Writing in python file
+fo=open("file2.txt",'w')
+#where w is line 1
+print(fo.write("python is so cool!!!!"))
+#close the file after you are done writing on it woo
+fo.close()
+
+#Example
+name=raw_input("enter file name: ")
+fo=open(name,"w")
+fo.write(raw_input("enter some text: \n"))
+fo.close()
+#This program reads a file and prints it o screen
+name=raw_input("enter file name: ")
+fo=open(name,"r")
+str=fo.read()
+print str
+#copy a file
+name=raw_input("enter file name::")
+fo = open(name)
+str=fo.read();
+print str
+fobj = open("dup_file.txt","w")
+fobj.write(str)
+fobj.close();
+fo.close()
+
+#copy a file
+name=raw_input("enter file name::")
+fo = open(name)
+str=fo.read();
+print str
+fobj = open("dup_file.txt","w")
+fobj.write(str)
+fobj.close();
+fo.close()
+
+#Error handling with file handling
+try:
+  fh = open("testfile", "w")
+  fh.write("something")
+except IOError:
+  print "Error: can\'t find file or read data"
+else:
+  print "Written content in the file successfully"
+  fh.close()
+#using with keyword to close files
+with open("abc.txt") as fp:         #uses with keyword to close files
+	print fp.read()
+
+#Writing with by quoting 
+with open("abc.txt","w") as f:
+	f.write("this is python language")
+#appending with keyword to close a file
+with open("abc.txt","w") as f:
+	f.write("this is python language")
+	f.write("\nthis is an advance language")
+	#this is how you clue a file
+with open("abc.txt","r") as f:
+	print f.readlines()
+	#also use
+	#print f.readlines(2)
+	#Also refer to seek function in chapter etc
+	f.seek(10)
+	print f.read()
+
+with open("abc.txt","r") as f:
+	str=f.readlines()
+	n=len(str)
+	print n
+
+#A question of beautiful soup in hacker-rank 
+#to get links of a page after a loader
+'''
+html=<a href="/story/0">Go get it</a>". 
+tag= BeautifulSoup(html,'html.parser').a
+#we use . symbol to add in the class name
+#write a python program to read a file from internet
+#write a python program to write a file to internet and get a response on internet
+#to write we use post command use the post command in 
+url="https://courses.edx.org/courses/course-v1:MITx+6.00.1x+1T2017/info"
+import re
+import urllib
+filehandelo=urllib.urlopen(url)
+for line in filehandelo:
+	line=line.rstrip()
+	if re.search('X-DSPAM-Confidence:',line):
+		self=re.findall('^X-DSPAM-Confidence:([0-9.]+)',line)
+		num=float(self)
+		if num>0.8:
+			print line
+'''
+'''
+#simple HTTP server from the internet
+python -m SimpleHTTPServer 8000
+This will start a server at port 8000.
+'''
+
+#write a program to sort every line in a input file
+'''
+fname=raw_input("Enter file name: ")
+k=[]
+for line in open(fname):
+	line=line.rstrip()
+	l=line.split()
+	l.sort()
+	now=' '.join(l)
+	k.append(now)
+for line in k: print line
+'''
+'''
+fname = raw_input("Enter file name: ")
+with open(fname) as f:
+	i=1
+	lines=[line.rstrip() for line in f]
+	lines.sort()
+for i in lines:
+	print i
+'''
+#URL should be something like https://a IPaddressofserver
+
+#write a file to post on http
+'''
+import urllib
+param = {'allow_redirects':'0', 'url' : 'www.google.com/'}
+fhand = urllib.urlopen("http://127.0.0.1:5000/foo",urllib.urlencode(param))
+for line in fhand:
+	print line.strip()
+'''
+'''
+#example of json conversion
+import json
+numbers = [2, 3, 4, 5, 42]
+filename = 'numbers.txt'
+
+with open(filename, 'w') as f_obj:
+	json.dump(numbers, f_obj)
+	
+import json
+with open(filename) as f_obj:
+	numbers = json.load(f_obj)
+	
+print(numbers)
+'''
+#example of json in model
+'''
+def print_json(json):
+	print(json.dumps(json, sort_keys=True, indent=4))
+'''
+'''
+#Extracting information from your own website
+write a program to extract all the links from your website
+no forgetting that the robot.txt
+'''	
+#Example 1
+from urllib import urlopen
+from BeautifulSoup import beautifulSoup
+html = urlopen("http://www.atlanta-airport.com/unescorted-access/terminal-guide.aspx")
+bsObj = BeautifulSoup(html)
+print(bsObj.prettify())
+#Example 2
+from urllib import urlopen
+from BeautifulSoup import BeautifulSoup
+import re
+html = urlopen("http://www.mnsu.edu/find/results.php?key_FirstName=sai&key_LastName=reddy&nationalFirstName=&nationalLastName=&internationalFirstName=&internationalLastName=&facultyType=all")
+bsObj = BeautifulSoup(html)
+addressList = bsObj.findAll("span",{"class":"results_address"})
+for address in addressList:
+	print(address.get_text())
+#Exmple 3
+from bs4 import BeautifulSoup
+import requests
+from PIL import Image
+from StringIO import StringIO
+from selenium import PhantomJS
+import cv2
+from nppyxl import copy
+from numpy import asarray
+from httplib import CREATED
+from cgitb import text
+url= "https://www.google.com"
+htmlDoc= requests.get(url,"html.parser")
+soup= BeautifulSoup(htmlDoc.text, "lxml")
+img= soup.find("img",id="hplogo")
+source = "https://www.google.com"+img["src"]
+img= Image.open(StringIO(requests.get(source).content))
+img.save("hinse.png")
+img = cv2.imread("hinse.png",'r')
+cv2.imshow("",img)
+cv2.destroyAllWindows()
+#Example 4
+from selenium import webdriver
+import time
+driver = webdriver.PhantomJS()
+driver.get("https://www.google.com")
+time.sleep(10)
+driver.save_screenshot("pic.jpeg")
+driver.quit()
+#Example 5
+from selenium import webdriver
+import selenium.webdriver.common.keys
+import time
+
+browser = webdriver.Firefox() # Open the browser
+
+browser.get('https://www.yahoo.com') # Insert URL
+
+time.sleep(5) # Wait
+
+elem = browser.find_element_by_xpath('//*[@id="uh-mail-link"]/a') #Element that is to be clicked
+
+elem.click() #Click the element
+
+#Example 6
+#automation of your own browser
+from selenium import webdriver
+import time
+browser = webdriver.Firefox() #it opens firefox
+browser.get('https://www.google.com') #insert the url
+time.sleep(10) #sleep
+elem = browser.find_element_by_xpath('//*[@id="uh-mail-link"]/a')
+elem.click()
+
+#Example
+import gdata.docs.service
+import gdata.spreadsheet.service
+# Example 1
+email = 'dipsych21@gmail.com'
+password = 'dipu01'
+phone_number = '(703)555-1212'
+
+if __name__ == '__main__':
+	email = 'dipsych21@gmail.com'
+	password = 'dipu01'
+	phone_number = '(703)555-1212'
+
+	gd_client = gdata.docs.service.DocsService(email, password)
+	
+	q = gdata.docs.service.DocumentQuery()
+	q['q'] = 'kind:spreadsheet'	
+	feed = gd_client.Query(q.ToUri())
+
+	table_id = feed.entry[0].id.text.rsplit('/', 1)[1]
+	gd_client = gspreadsheet.SpreadsheetService(email, password)
+	# key = spreadsheet key
+	key = 'thUj7ivvzJhUJrD6jq4HxDg'
+	wks = gd_client.GetWorksheets(table_id)		
+	
+	worksheet = wks.entry[wks.GetWorksheetIndexByName('data')].id.text.rsplit('/', 1)[1]		
+	
+	spreadsheet = gd_client.GetNamedRangeFeed(key, worksheet)
+	# Modify this loop to do the interesting stuff
+for row_entries in spreadsheet.entry:
+  print row_entries.title.text, row_entries.content.text
+# Example 2
+import gdata.docs.data
+import gdata.docs.cliente
+'''
+client = gdata.docs.client.DocsClient(source='yourCo-YourAppName-v1')
+client.ClientLogin('jo@example.com', '********', client.source)
+entry = client.CreateResource('Document')
+entry.setTitle(title)
+entry.SetDocumentType('document')
+media = DocumentListEntry()
+new_entry = client.Post(entry, media, content_type='text/plain')
+new_entry.id.text.split('/')[-1]
+'''
+#Example 3
+'''
+credentials = OAuth2Credentials(
+ninety nine@ex.com'
+'passowrd',
+'00000000000000000000000',
+'https://www.googleapis.com/auth/drive.metadata.readonly',
+None,
+None,
+revokeOrientation='https://accounts.google.com/o/oauth2/revoke',
+token_expiry=None,
+token_uri='https://accounts.google.com/o/oauth2/token',
+user_agent=image/3.4.1 (gzip),
+)
+client = gspreadsheets.authorize(credentials)
+spreadsheet = client.open('example_digital_detox')
+worksheets = spreadsheet.get_worksheet_names(wks_index)
+header = worksheets.row_values(1)
+questions = worksheets.get_all_records()
+cd /workspace/src/digital-detox-data-ingestion
+'''
+'''
+>> gss_client = gspreadsheet(ninety_nine@ex.com, password)
+>> feed = gss_client.GetWorksheetsFeed(example_digital_detox)
+- > for x in feed.entry:
+	print(x.title.text)
+
+Above is just repl
+'''
+#Python is interprated language
+#Python array program
+#x is an array
+ac=[]
+for x in range(0,100):
+	ac.append(x*3)#built-in function
+for x in range (0,100):
+	print(x)
+#Python variable types
+from urlparse import urljoin
+var1="abc"
+var2=83
+var3=54.90+90
+print var1,var2
+print var3
+a='python is '
+b='a great programming language'
+print a+b; # uses + operator agao
+print a*3,b*3 #seperate statement by ,
+#Deleting varaible
+del var1#deletes the var1 you can use also del var1,var2,var3,var4
+#Python sequence types
+a='python'
+b='world'
+#len() functions returns the length of the string
+
+#Indeces for basic string manipulation
+a='python is a great language'
+print a[0]         #prints y
+print a[1:2]      #prints y followed by o 'yo'
+print a[len(a):10]
+print a[11:14]    #prints u without e since e is 14
+print a[-3:-1]     #prints century
+a='python is very cool'
+#Note that sice the index starts from zero a[1] is the second indexed vlaues
+print a[0:9]     
+print a[len(a)-4:len(a)+4]
+#also print a[len(a)-4:100]#100 has no effect
+#you can use loops for indexing
+for x in a:
+	print(x)
+#iterating through a string
+for x in "python is great language":
+	print (x)
+for x in a: print x
+a='python is awesome'
+del a
+#write a pragmatic point
+#Python list operation.
+#List is the collection of items
+a=[890,[54,90,86,78],56,["fish","cobra"],"sai",54.78]
+#list can you heterogeneous values
+a=[54,89,90,678,[545,568,'<','>','f','*','999',[]]]
+print a
+print a[0]
+del a[1]#deletes the second indexed item 'sai'
+#what does pop mean? 
+#Pop removes item from pushed stack
+b=['a','b','d','c','e','f','g','h','i','j','k','l','m','n','o','q']
+print a
+del b[1]
+print b[1]
+#how to update a list
+m=[35,['mango',3,5,'fish']]#try another example
+[58,74,[56,67,83]]
+print m
+a[1]=[122,'glasses',767]
+print m
+#print example
+a=20
+print a#just print value of a
+print(a)#equivalent to previous statement
+print a, 'sai'
+#write various types of quote values like single,double,triple quotes
+a="python is great programming language''
+b='python is great programming language'
+c="*python is a great programming language*"
+d="""python is a great programming language
+this is python is a great programming language"""
+print a ,b,c,d
+a='sai says "python is a great programming language"'
+b="sai says 'python is a great programming language'"
+print a ,b
+a=10
+b=20
+c=a+b
+print "sum of %i and %i is %i" %(a,b,c)
+a="is it true %5.3f " %(3.645672)
+print a
+#Python immutable sequences
+'''
+a="basic program"
+b[1]=3 # you can't update 
+append is used to update a string
+print b[1] #will print p
+'''
+del a[0]#you can delete a string 
+print 'r'+a[0:len(a)-1]
+for x in a:
+	print x,a[1]*3
+	print len(a)
+#Python tuples
+'''
+Tuples are immutable data types
+So you can't update them-immutable data types
+'''
+a=(11,21,31,[34,45],'wor','ram','fast','ram','sai','slow','fast','slow','empty','black')
+print len(a) #length of tuple is 14
+print a[1],'sai' +a[7], a[1]
+print a
+b=('is','python','interprated','language',[3,'   ',6,9,7],['six',78],
+'four',2,('what','is','word','pairs',90),90,'seven' 
+)
+print b
+#Python Set types
+'''
+ a=set()
+ a=['go',' for', 'a', 'walk']
+ b=['study','maths', 'biology']
+ c=[]
+ c=a&b
+ This is an intersection of sets
+ '''
+a={1,2,"sai",3,3,3,3,3,3,3,3}
+print a 
+print 1 in a #test value variable is present in set
+print 2 in b #test value variable is present in set
+#check if two sets have common elements
+#toggle comments by pressing control + k + c
+#.union(both sets contain these characters)
+a={'sai','what','python','is','awesome'}
+b={'hello','world','python','is','great'}
+print a
+print b
+print a&b
+print a.union(b)
+print  a-b
+b = dict()
+c = dict()
+b = dict({"a":1,"b":2,"c":3,"d":4,"e":5,"f":6,"g":7,"h":8})
+print (b.keys())
+print (b.items())
+print (b.values())
+c = dict({"g":98,"h":77})
+print (c.values())
+print (c.keys())
+print (b.items() & c.items())
+print ( dict.keys(c))
+
+'''
+#Python range function example
+range([start,] stop [,step] )
+'''
+c=123 
+print (c)
+d=444  
+print (d)
+#(c,d)=swap(d,c) 
+(c,d)=(d,c)
+print (c)
+print (d)
+print(range(5),range(5,100),range(5,100,2))
+#write your own example for above statement
+for x in range(0,10):
+	print x*9
+
+#Python build in functions
+import random
+#print random.random()
+#random.seed(0)#seeds function means makes it repeatable
+print random.sample([34,45,78,79],3)
+#range(1000) - means  
+#random.randrange(1000)
+#Example of lists
+a=list()
+print a
+tup = (1,2,3)
+temp = list(tup)
+temp[0] = 99
+temp=[a[i] + i for i in range(0,100)]
+print temp
+#Python type casting
+'''
+python uses type casting which is type convertion
+'''
+#Pytho threading
+'''
+a thread is called a small lightweight process
+'''
+import threading
+'''
+There are several deeper things in this 
+see the hacker-rank question
+'''
+#Defining Functions,
+''' 
+ This function is used to square a number
+ '''
+def square(n):
+	"""
+	returns 3 times n
+	"""
+	return n**n # double asterisk is used for indexing
+print square(4)
+#you can add a comment too
+#variable length argument
+drum_strip='***************************************'
+def avg(*arg):
+	"""
+	avg function
+	print("number of arguments is " arg(	))
+	"""
+	return sum(arg)/len(arg)
+print avg(3,3)
+print avg(3,3,3)
+print avg(3,4,6)
+
+#Process based simultaneous execution examples
+import time
+import threading
+def double(number):
+	"""
+	Function to double the number
+	"""
+	print("before Thread Process1 {}".format(threading.currently_act_prcs_()))
+	print("Double value: {}".format(2*pb_id(number,2)))
+	print("after threading process {}".format(threading.currently_active_process()))
+	print drum_strip
+	return 2*number
+def cube(number):
+	"""
+	Function to cube a number
+	"""
+	print drum_strip
+	print("before Thread Process2 {}".format(threading.currently_active_process()))
+	print("Cube value: {}".format(3*number))
+	print("after threading process {}".format(threading.currently_active_process()))
+	print drum_strip
+	return 3 * number
+if __name__ == '__main__':
+	beg_time = time.time()
+	fltr(double(2))
+	thrd1 = threading.thread(target=double, args=(2,), kwargs={})
+	thrd2 = threading.thread(target=cube, args=(3,), kwargs={})
+	thrd1.start()
+	rect(ube, "Cubing", "003", twodigit)
+	thrd2.start()
+	rect(ouble, "Doubling", "002", twodigit)
+	thrd1.join()
+	thrd2.join()
+	end_time = time.time()
+	print("Total time taken {}".format(end_time - beg_time))
+#Multi processing get it from cpuduino website itself.
+#Redirect your call
+'''
+For redirecting output use sys.stderr or sys.stdout
+For changing redirecting your program
+pid = os.fork()
+if pid > 0:
+	sys.stresrr = open('so.txt', 'a')
+	print 'Redircting o/p so that the user can access it after invocation'
+'''
+#executing os command in python program
+'''
+While using os command remember that every os has a different
+syntax also python itself has os is own command syntax
+'''
+import os
+os.call('/usr/bin/firefox http:www.google.com')
+fin ,fout = os.popen7popen2('/bin/ls -1', 't') #: is the syntax
+print(fout.readlines())
+#Explorying python standard lib
+import sys
+print(sys.argv)
+#do chatbots
+'''
+write a chatbot 
+chatbots don't have interest but will learn from my own responses and 
+talk about them:
+'''
+abcdef="Hello sai "
+print abcdef
+ghwdj="How are you?"
+print ghwdj
+defghi="do you want to play with me y/n"
+print defghi
+kywsdd="see you next time if you continue"
+print kywsdd
+yeet=" "
+yeet=raw_input("say something- ")
+strcase = yeet.upper() or yeet.lower()
+if strcase "yes" or "alright":
+	yeet = raw_pages on linkedinn, try it out and get me#outputnum 2
+num = 2,876,356
+for code in range(0,4):
+	print (num)
+num=float(input("enter positive number") )
+if num<0.0:
+	print("positive value")
+if num == 0.0:
+	print("zero")
+if num<0.0:
+	print ("negative number")
+yeet="3.5"
+blip=5.5-1.5j
+copy=int(num)
+copy=complex(yeet)
+print copy
+print type(num)
+print type(copy)
+print type(blip)
+#Insert a movie
+class movie:
+	def _init_(self.title=" ",genre=" ",year=" "):
+		self.title = title 
+		self.year = year
+		self.genre= genre
+	def func_name(self):
+		print(self.title, self.year, self.genre)
+		print(str(self.title) + " " + str(self.genre)+ " " + str(self.year))
+obj=movie()
+obj.title="Tremors"
+obj.genre="Action/Comedy"
+obj.year=1990
+obj.func_name()
+'''
+class movie:
+	"sample class"
+	def _init_(self.title, genre, year):
+		self.title = title 
+		self.year = year
+		self.genre= genre
+	def collate_details(self):
+		print(self.title, self.year, self.genre)
+		print(str(self.title) + " " + str(self.genre)+ " " + str(self.year))
+'''
+#Social network programming 
+#explore the libpcap capture library
+#write a ping program using sockets
+#what is socket programming?
+import socket
+
+s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+s.connect(("http://example.com",80))
+#s.sendall('GET / \r\n')
+result = s.recv(10000)
+#Exploring CGI 
+#Roth is reversed order search and numsearch is forward search.
+#Exploring  httplib 
+import httplib
+conn = httplib.HTTPConnection("google.com")
+conn.request("GET","/")
+response = conn.getresponse()
+print response.status , response.reason
+data = response.read()
+print datadef print_word(word):
+    print('Hello World')
+    return word
+
+print_word(print_word)
+
+#write a python program to print avarage of 3 numbers
+
+num1 = eval(input('please enter number1 '))
+num2 = eval(input('please enter number2 '))
+num3 = eval(input('please enter number3 '))
+
+print('the avarage of 3 number is ',(num1+num2+num3)/3)
+
+#write a python program to cal  the area of circle and triangle
+
+def area_circle(radius):
+    return (3.142*radius*radius)
+
+def area_triangle(base,height):
+    return (0.5*base*height)
+
+radius = eval(input('please enter radius to cal the area of circle '))
+height = eval(input('please enter the height of Triangle '))
+base = eval(input('please enter the base of Triangle '))
+
+print('the area of circle is ',area_circle(radius))
+print('the area of triangle id ',area_triangle(base,height))
+
+#write a python which return hte square of any number.
+
+def square_num(num):
+    square = (num**2)
+    return square
+
+num = eval(input('please input number to get the sqquare '))
+print('the sqquare of the given number is ',square_num(num))
+
+#write a program to print the sum of 50 real nmber 
+
+number_list=[]
+
+def sum_list():
+    i=1
+    while i<=50:
+        numbers = eval(input('please enter number :'))
+        number_list.append(numbers)
+        i=i+1
+    
+    #print('the sum of list is ',sum(number_list))    
+    return number_list,sum(number_list)
+
+print('the sum of real number is ',sum_list())
+
+#write a program to swap two variable
+
+a = eval(input('please enter variable 1 '))
+b = eval(input('please enter variable 2 '))
+(a,b)=(b,a)
+print(a,b)
+
+#write a python program to find the sum of the each elements ,ignore the moster value 
+
+number_list=[]
+
+def sum_list():
+    i=1
+    while i<=7:
+        numbers = eval(input('please enter number :'))
+        number_list.append(numbers)
+        i=i+1
+    
+    #print('the sum of list is ',sum(number_list))    
+    return number_list,sum(number_list)
+
+print('the sum of real number is ',sum_list())
+
+def remove_0():
+    zero = number_list.index(0)
+    number_list.pop(zero)
+    print('after removing 0 the new list is ',number_list) 
+    return number_list
+
+remove_0()
+
+#write a python program to find comon num in 3 numbers 
+
+def comon_num(n1,n2,n3):
+    com_num = []
+    for i in n1:
+        for a in n2:
+            for b in n3:
+                if i==a==b:
+                    com_num.append(i)
+    return com_num
+
+n1 = [1,2,3,5,8]
+n2 = [3,5,6,12,8]
+n3 = [44,5,6,3,25,8]
+print('the commom contacts between number lisr is ',comon_num(n1,n2,n3))
+
+#write a program to print squared value of user input number
+
+def square_num(num):
+    square = (num**2)
+    return square
+
+num = eval(input('please input number to get the sqquare '))
+print('the sqquare of the given number is ',square_num(num))
+
+#write a program to sum of all prime number in given range
+
+def prime_num(n):
+    prm_num=[]
+    for x in range(n+1):
+         for y in range(2, x):
+            if x % y == 0:
+                 break
+         else:
+              prm_num.append(x)  
+    return prm_num
+            
+entry_nummer = eval(input('please input number: ')) 
+print('all the prime numre are in the list ',prime_num(entry_nummer))
+#print('the sum of all prime number in the given range : ',sum(prime_num(entry_nummer)))
+
+#Write a program which will find all such numbers which are divisible by 7 but are not a multiple of 5,
+#between 2000 and 3200 (both included).The numbers obtained should be printed in a comma-separated sequence on a single line.
+
+div_num = []
+for i  in range(2000,3000):
+    if (i%7==0) and (i%5!=0):
+        div_num.append(i)
+
+print('the numbrs obtaied are',div_num)        
+
+#Write a program in which multiplication of two 3X3 matrix
+result= []
+x = [[1,2,3],[4,5,6],[7,8,9]]
+y = [[9,8,7],[6,5,4],[3,2,1]]
+for i in range(len(x)):
+    for j in range(len(x[0])): 
+        sum=0
+        for k in range(len(y)) :
+            sum += x[i*3+k]*y[k*3 + j]
+        result.append(sum)
+
+for i in result:
+    print(i, end = " ")
+
+# Write a program in which (N x N)identity matrix is generated
+
+n = int(input('enter a 3*3 order matrix : '))
+matrix = [[0 for i in  range(n)] for j in range(n)]
+
+for row in range(n):
+    for col in range(n):
+        if row == col:
+            matrix [row][col] = 1
+        else:
+            matrix[row][col] = 0
+
+for row in matrix:
+    for col in row:
+        print(col, end = ' ')
+    print()   
+
+users = {'anil':{'password':'anil989878','first_name' : 'vikas','last_name':'venkateshappa'},'pooja':{'password':'pooja123','first_name':'pooja','last_name':'lohith'},'alekhya':{'password':'alekhya123','first_name':'alekhya','last_name':'shiva'}}
+
+def login(username,password):
+    if username in users and password in users[username].values():
+        print('welcome to my page')    
+    else :
+        print('sorry for the inconvienece the cred have temporarly changed you have to change your cred ')
+
+i = input('please enter username :')
+j = input('please enter parssword :')
+login(i,j)Writing python programs in Notepad++
+What is the easiest way to install python modules? PIP or Easy Installation?
+print <code>"hello world"</code> mulitple times with a while and a <code>For Loop</code> whilst averaging a number from an array
+undo python dependencies added to lsp-mode - company-yasnippet
+Take a list of intervals and their attribute, and print the length and start point
+General Purpose Image Recognition / Object Detection API and Video Streaming or Recording API - Python
+
+
+
+A:
+
+Your class isn't intended to be adduced and instanciated, you can't do this :
+<code>auto scriptEngine = new ScriptEngine()
+</code>
+Your class is a namespace containing some functions, so use them as follow :
+<code>int eval = ScriptEngine.eval_expr("2 + 3");
+</code>
+PS: You are using C++11, transform your vector inheriting file in a <code>#include&lt;vector&gt;</code>
+ which is not bound to any language* and compare the results. For testing or evaluating the method there should be printed a report containing various information ("text is detected", "use an other method", "give an other image", "return",...) and implements a simple user interface. It should be used only open source technologies, which can be found in a linux standard repository (python, tesseract, tesseract-ocr-eng, tesseract-ocr-deu, java, java-rhino, tess4J, ...) After we exemined the program then we can choose one of the other open source libraries or web services to use it in the next stage: 2. reference detector if the choosen method from the first stage didn't give the best results then we got to use or program another way or if the choosen method from the first stage gives the best results then optimized the chosen method to get a better quality. Any changes in the method should be noted for a reference. 2 After the improving we can create a small pdf editor where we can select images, place them in an pdf file, resize them and convert them to an fitting txt format. The user should only have to click on the image and can set an options in a small dialogue (which OCR-Engine liefer the best results, save an white information, spilt text by use of double quotes,...) 3. proofreader 4. editing workflow If a user choose a text in his pdf file then he should have the option "convert to image" and the selected text will be convert it to an image and past it after the selection. After the user have done this actionn with all the text in the pdf, he can delete all the text from the pdf file and set the image in the pdf file (which are from the selected text). Then the user can do some formatting actions by drag & drop and resize. To test it we would convert a pdf file, which contains an extraordinary long and complex text (e. An long article from encyclopaedia britannica, cal: english) written in english and german to pdf..
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
+
+import cv2
+import os
+
+#reading the image
+img = cv2.imread('images/text.jpg')
+
+#displaying the image
+cv2.imshow('image', img)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+
+#converting the image to gray scale
+gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+
+#displaying the gray scale image
+cv2.imshow('gray', gray)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+
+#writing the gray scale image
+cv2.imwrite('images/gray.jpg', gray)
+
+#reading the gray scale image
+img = cv2.imread('images/gray.jpg', 0)
+
+#applying thresholding
+threshold = cv2.adaptiveThreshold(img, 255, cv2.ADAPTIVE_THRESH_GAUSSIAN_C, cv2.THRESH_BINARY, 11, 2)
+
+#displaying the threshold image
+cv2.imshow('threshold', threshold)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+
+#writing the threshold image
+cv2.imwrite('images/threshold.jpg', threshold)
+
+#reading the threshold image
+img = cv2.imread('images/threshold.jpg', 0)
+
+#applying canny edge detection
+canny = cv2.Canny(img, 100, 200)
+
+#displaying the canny edge image
+cv2.imshow('canny', canny)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+
+#writing the canny edge image
+cv2.imwrite('images/canny.jpg', canny)
+
+#reading the canny edge image
+img = cv2.imread('images/canny.jpg', 0)
+
+#applying erode
+kernel = cv2.getStructuringElement(cv2.MORPH_RECT, (5,5))
+erode = cv2.erode(img, kernel, iterations = 1)
+
+#displaying the eroded image
+cv2.imshow('erode', erode)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+
+#writing the eroded image
+cv2.imwrite('images/erode.jpg', erode)
+
+#reading the eroded image
+img = cv2.imread('images/erode.jpg', 0)
+
+#applying dilate
+dilate = cv2.dilate(img, kernel, iterations = 1)
+
+#displaying the dilated image
+cv2.imshow('dilate', dilate)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+
+#writing the dilated image
+cv2.imwrite('images/dilate.jpg', dilate)
+
+#reading the dilated image
+img = cv2.imread('images/dilate.jpg', 0)
+
+#applying opening
+opening = cv2.morphologyEx(img, cv2.MORPH_OPEN, kernel)
+
+#displaying the opening image
+cv2.imshow('opening', opening)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+
+#writing the opening image
+cv2.imwrite('images/opening.jpg', opening)
+
+#reading the opening image
+img = cv2.imread('images/opening.jpg', 0)
+
+#applying closing
+closing = cv2.morphologyEx(img, cv2.MORPH_CLOSE, kernel)
+
+#displaying the closing image
+cv2.imshow('closing', closing)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+
+#writing the closing image
+cv2.imwrite('images/closing.jpg', closing)
+
+#reading the closing image
+img = cv2.imread('images/closing.jpg', 0)
+
+#applying gradient
+gradient = cv2.morphologyEx(img, cv2.MORPH_GRADIENT, kernel)
+
+#displaying the gradient image
+cv2.imshow('gradient', gradient)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+
+#writing the gradient image
+cv2.imwrite('images/gradient.jpg', gradient)
+
+#reading the gradient image
+img = cv2.imread('images/gradient.jpg', 0)
+
+#applying top hat
+tophat = cv2.morphologyEx(img, cv2.MORPH_TOPHAT, kernel)
+
+#displaying the top hat image
+cv2.imshow('tophat', tophat)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+
+#writing the top hat image
+cv2.imwrite('images/tophat.jpg', tophat)
+
+#reading the top hat image
+img = cv2.imread('images/tophat.jpg', 0)
+
+#applying black hat
+blackhat = cv2.morphologyEx(img, cv2.MORPH_BLACKHAT, kernel)
+
+#displaying the black hat image
+cv2.imshow('blackhat', blackhat)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+
+#writing the black hat image
+cv2.imwrite('images/blackhat.jpg', blackhat)
+
+#reading the black hat image
+img = cv2.imread('images/blackhat.jpg', 0)
+
+#applying skeleton
+skeleton = cv2.ximgproc.thinning(img, None, None, cv2.ximgproc.THINNING_GUOHALL)
+
+#displaying the skeleton image
+cv2.imshow('skeleton', skeleton)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+
+#writing the skeleton image
+cv2.imwrite('images/skeleton.jpg', skeleton)
+
+#reading the skeleton image
+img = cv2.imread('images/skeleton.jpg', 0)
+
+#applying distance transform
+dist_transform = cv2.distanceTransform(img, cv2.DIST_L2, 5)
+
+#displaying the distance transform image
+cv2.imshow('dist_transform', dist_transform)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+
+#writing the distance transform image
+cv2.imwrite('images/dist_transform.jpg', dist_transform)
+
+#reading the distance transform image
+img = cv2.imread('images/dist_transform.jpg', 0)
+
+#applying local gradient
+local_gradient = cv2.morphologyEx(img, cv2.MORPH_GRADIENT, kernel)
+
+#displaying the local gradient image
+cv2.imshow('local_gradient', local_gradient)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+
+#writing the local gradient image
+cv2.imwrite('images/local_gradient.jpg', local_gradient)
+
+#reading the local gradient image
+img = cv2.imread('images/local_gradient.jpg', 0)
+
+#applying OCR
+reader = easyocr.Reader(['en'])
+text = reader.readtext('images/gray.jpg')
+print(text)
+reader = easyocr.Reader(['en'])
+
+# detect and read text from image
+bbox = reader.readtext('test.png')
+# print text
+print(bbox)
+
+# output
+# [[['test', [10, 5, 100, 50], 0.967741935483871], ['test', [10, 5, 100, 50], 0.967741935483871], ['test', [10, 5, 100, 50], 0.967741935483871], ['test', [10, 5, 100, 50], 0.967741935483871], ['test', [10, 5, 100, 50], 0.967741935483871], ['test', [10, 5, 100, 50], 0.967741935483871], ['test', [10, 5, 100, 50], 0.967741935483871], ['test', [10, 5, 100, 50], 0.967741935483871], ['test', [10, 5, 100, 50], 0.967741935483871], ['test', [10, 5, 100, 50], 0.967741935483871]]]
+
+# detect and read text from image
+bbox = reader.readtext('test.png', detail=0)
+# print text
+print(bbox)
+
+# output
+# [['test', [10, 5, 100, 50], 0.967741935483871]]
+
+# detect and read text from image
+bbox = reader.readtext('test.png', detail=0, height=100)
+# print text
+print(bbox)
+
+# output
+# [['test', [10, 5, 100, 50], 0.967741935483871]]
+
+# detect and read text from image
+bbox = reader.readtext('test.png', detail=0, height=100, width=100)
+# print text
+print(bbox)
+
+# output
+# [['test', [10, 5, 100, 50], 0.967741935483871]]
+
+# detect and read text from image
+bbox = reader.readtext('test.png', detail=0, height=100, width=100, psm=6)
+# print text
+print(bbox)
+
+# output
+# [['test', [10, 5, 100, 50], 0.967741935483871]]
+
+# detect and read text from image
+bbox = reader.readtext('test.png', detail=0, height=100, width=100, psm=6, lang='en')
+# print text
+print(bbox)
+
+# output
+# [['test', [10, 5, 100, 50], 0.967741935483871]]
+
+# detect and read text from image
+bbox = reader.readtext('test.png', detail=0, height=100, width=100, psm=6, lang='en', mode='RGB')
+# print text
+print(bbox)
+
+# output
+# [['test', [10, 5, 100, 50], 0.967741935483871]]
+
+# detect and read text from image
+bbox = reader.readtext('test.png', detail=0, height=100, width=100, psm=6, lang='en', mode='RGB',
+                       output_type='data')
+# print text
+print(bbox)
+
+# output
+# [['test', [10, 5, 100, 50], 0.967741935483871]]
+
+# detect and read text from image
+bbox = reader.readtext('test.png', detail=0, height=100, width=100, psm=6, lang='en', mode='RGB',
+                       output_type='data', correction=0.9)
+# print text
+print(bbox)
+
+# output
+# [['test', [10, 5, 100, 50], 0.967741935483871]]
+import cv2
+import numpy as np
+
+reader = easyocr.Reader(['en'])
+
+image = cv2.imread('text.jpg')
+image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+_, image = cv2.threshold(image, 200, 255, cv2.THRESH_BINARY)
+image = cv2.bitwise_not(image)
+
+image = cv2.resize(image, None, fx=2, fy=2, interpolation=cv2.INTER_AREA)
+
+text = reader.readtext(image)
+print(text)
+
+cv2.imshow('image', image)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+reader = easyocr.Reader(['en'])
+reader.readtext('/home/ai21/Desktop/common/ML/Day10/image.jpg')
+
+# write a python program to detect the text from the image by 10 different methods
+import pytesseract
+from PIL import Image
+img = Image.open('/home/ai21/Desktop/common/ML/Day10/image.jpg')
+text = pytesseract.image_to_string(img)
+print(text)
+
+# write a python program to detect the text from the image by 10 different methods
+import pytesseract
+from PIL import Image
+img = Image.open('/home/ai21/Desktop/common/ML/Day10/image.jpg')
+text = pytesseract.image_to_string(img)
+print(text)
+
+# write a python program to detect the text from the image by 10 different methods
+import pytesseract
+from PIL import Image
+img = Image.open('/home/ai21/Desktop/common/ML/Day10/image.jpg')
+text = pytesseract.image_to_string(img)
+print(text)
+
+# write a python program to detect the text from the image by 10 different methods
+import pytesseract
+from PIL import Image
+img = Image.open('/home/ai21/Desktop/common/ML/Day10/image.jpg')
+text = pytesseract.image_to_string(img)
+print(text)
+
+# write a python program to detect the text from the image by 10 different methods
+import pytesseract
+from PIL import Image
+img = Image.open('/home/ai21/Desktop/common/ML/Day10/image.jpg')
+text = pytesseract.image_to_string(img)
+print(text)
+
+# write a python program to detect the text from the image by 10 different methods
+import pytesseract
+from PIL import Image
+img = Image.open('/home/ai21/Desktop/common/ML/Day10/image.jpg')
+text = pytesseract.image_to_string(img)
+print(text)
+
+# write a python program to detect the text from the image by 10 different methods
+import pytesseract
+from PIL import Image
+img = Image.open('/home/ai21/Desktop/common/ML/Day10/image.jpg')
+text = pytesseract.image_to_string(img)
+print(text)
+
+# write a python program to detect the text from the image by 10 different methods
+import pytesseract
+from PIL import Image
+img = Image.open('/home/ai21/Desktop/common/ML/Day10/image.jpg')
+text = pytesseract.image_to_string(img)
+print(text)
+
+# write a python program to detect the text from the image by 10 different methods
+import pytesseract
+from PIL import Image
+img = Image.open('/home/ai21/Desktop/common/ML/Day10/image.jpg')
+text = pytesseract.image_to_string(img)
+print(text)
+
+# write a python program to detect the text from the image by 10 different methods
+import pytesseract
+from PIL import Image
+img = Image.open('/home/ai21/Desktop/common/ML/Day10/image.jpg')
+text = pytesseract.image_to_string(img)
+print(text)
+
+# write a python program to detect the text from the image by 10 different methods
+import pytesseract
+from PIL import Image
+img = Image.open('/home/ai21/Desktop/common/ML/Day10/image.jpg')
+text = pytesseract.image_to_string(img)
+print(text)
+
+# write a python program to detect the text from the image by 10 different methods
+import pytesseract
+from PIL import Image
+img = Image.open('/home/ai21/Desktop/common/ML/Day10/image.jpg')
+text = pytesseract.image_to_string(img)
+print(text)
+
+# write a python program to detect the text from the image by 10 different methods
+import pytesseract
+from PIL import Image
+img = Image.open('/home/ai21/Desktop/common/ML/Day10/image.jpg')
+text = pytesseract.image_to_string(img)
+print(text)
+
+# write a python program to detect the text from the image by 10 different methods
+import pytesseract
+from PIL import Image
+img = Image.open('/home/ai21/Desktop/common/ML/Day10/image.jpg')
+text = pytesseract.image_to_string(img)
+print(text)
+
+# write a python program to detect the text from the image by 10 different methods
+import pytesseract
+from PIL import Image
+img = Image.open('/home/ai21/Desktop/common/ML/Day10/image.jpg')
+text = pytesseract.image_to_string(img)
+print(text)
+
+# write a python program to detect the text from the image by 10 different methods
+import pytesseract
+from PIL import Image
+img = Image.open('/home/ai21/Desktop/common/ML/Day10/image.jpg')
+text = pytesseract.image_to_string(img)
+print(text)
+
+# write a python program to detect the text from the image by 10 different methods
+import pytesseract
+from PIL import Image
+img = Image.open('/home/ai21/Desktop/common/ML/Day10/image.jpg')
+text = pytesseract.image_to_string(img)
+print(text)
+
+# write a python program to detect the text from the image by 10 different methods
+import pytesseract
+from PIL import Image
+img = Image.open('/home/ai21/Desktop/common/ML/Day10/image.jpg')
+text = pytesseract.image_to_string(img)
+print(text)
+
+# write a python program to detect the text from the image by 10 different methods
+import pytesseract
+from PIL import Image
+img = Image.open('/home/ai21/Desktop/common/ML/Day10/image.jpg')
+text = pytesseract.image_to_string(img)
+print(text)
+
+# write a python program to detect the text from the image by 10 different methods
+import pytesseract
+from PIL import Image
+img = Image.open('/home/ai21/Desktop/common/ML/Day10/image.jpg')
+text = pytesseract.image_to_string(img)
+print(text)
+
+# write a python program to detect the text from the image by 10 different methods
+import pytesseract
+from PIL import Image
+img = Image.open('/home/ai21/Desktop/common/ML/Day10/image.jpg')
+text = pytesseract.image_to_string(img)
+print(text)
+
+# write a python program to detect the text from the image by 10 different methods
+import pytesseract
+from PIL import Image
+img = Image.open('/home/ai21/Desktop/common/ML/Day10/image.jpg')
+text = pytesseract.image_to_string(img)
+print(text)
+
+# write a python program to detect the text from the image by 10 different methods
+import pytesseract
+from PIL import Image
+img = Image.open('/home/ai21/Desktop/common/ML/Day10/image.jpg')
+text = pytesseract.image_to_string(img)
+print(text)
+
+# write a python program to detect the text from the image by 10 different methods
+import pytesseract
+from PIL import Image
+img = Image.open('/home/ai21/Desktop/common/ML/Day10/image.jpg')
+text = pytesseract.image_to_string(img)
+print(text)
+
+# write a python program to detect the text from the image by 10 different methods
+import pytesseract
+from PIL import Image
+img = Image.open('/home/ai21/Desktop/common/ML/Day10/image.jpg')
+text = pytesseract.image_to_string(img)
+print(text)
+
+# write a python program to detect the text from the image by 10 different methods
+import pytesseract
+from PIL import Image
+img = Image.open('/home/ai21/Desktop/common/ML/Day10/image.jpg')
+text = pytesseract.image_to_string(img)
+print(text)
+
+# write a python program to detect the text from the image by 10 different methods
+import pytesseract
+from PIL import Image
+img = Image.open('/home/ai21/Desktop/common/ML/Day10/image.jpg')
+text = pytesseract.image_to_string(img)
+print(text)
+
+# write a python program to detect the text from the image by 10 different methods
+import pytesseract
+from PIL import Image
+img = Image.open('/home/ai21/Desktop/common/ML/Day10/image.jpg')
+text = pytesseract.image_to_string(img)
+print(text)
+
+# write a python program to detect the text from the image by 10 different methods
+import pytesseract
+from PIL import Image
+img = Image.open('/home/ai21/Desktop/common/ML/Day10/image.jpg')
+text = pytesseract.image_to_string(img)
+print(text)
+
+# write a python program to detect the text from the image by 10 different methods
+import pytesseract
+from PIL import Image
+img = Image.open('/home/ai21/Desktop/common/ML/Day10/image.jpg')
+text = pytesseract.image_to_string(img)
+print(text)
+
+# write a python program to detect the text from the image by 10 different methods
+import pytesseract
+from PIL import Image
+img = Image.open('/home/ai21/Desktop/common/ML/Day10/image.jpg')
+text = pytesseract.image_to_string(img)
+print(text)
+
+# write a python program to detect the text from the image by 10 different methods
+import pytesseract
+from PIL import Image
+img = Image.open('/home/ai21/Desktop/common/ML/Day10/image.jpg')
+text = pytesseract.image_to_string(img)
+print(text)
+
+# write a python program to detect the text from the image by 10 different methods
+import pytesseract
+from PIL import Image
+img = Image.open('/home/ai21/Desktop/common/ML/Day10/image.jpg')
+text = pytesseract.image_to_string(img)
+print(text)
+
+# write a python program to detect the text from the image by 10 different methods
+import pytesseract
+from PIL import Image
+img = Image.open('/home/ai21/Desktop/common/ML/Day10/image.jpg')
+text = pytesseract.image_to_string(img)
+print(text)
+
+# write a python program to detect the text from the image by 10 different methods
+import pytesseract
+from PIL import Image
+img = Image.open('/home/ai21/Desktop/common/ML/Day10/image.jpg')
+text = pytesseract.image_to_string(img)
+print(text)
+
+# write a python program to detect the text from the image by 10 different methods
+import pytesseract
+from PIL import Image
+img = Image.open('/home/ai21/Desktop/common/ML/Day10/image.jpg')
+text = pytesseract.image_to_string(img)
+print(text)
+
+# write a python program to detect the text from the image by 10 different methods
+import pytesseract
+from PIL import Image
+img = Image.open('/home/ai21/Desktop/common/ML/Day10/image.jpg')
+text = pytesseract.image_to_string(img)
+print(text)
+
+# write a python program to detect the text from the image by 10 different methods
+import pytesseract
+from PIL import Image
+img = Image.open('/home/ai21/Desktop/common/ML/Day10/image.jpg')
+text = pytesseract.image_to_string(img)
+print(text)
+
+# write a python program to detect the text from the image by 10 different methods
+import pytesseract
+from PIL import Image
+img = Image.open('/home/ai21/Desktop/common/ML/Day10/image.jpg')
+text = pytesseract.image_to_string(img)
+print(text)
+
+# write a python program to detect the text from the image by 10 different methods
+import pytesseract
+from PIL import Image
+img = Image.open('/home/ai21/Desktop/common/ML/Day10/image.jpg')
+text = pytesseract.image_to_string(img)
+print(text)
+
+# write a python program to detect the text from the image by 10 different methods
+import pytesseract
+from PIL import Image
+img = Image.open('/home/ai21/Desktop/common/ML/Day10/image.jpg')
+text = pytesseract.image_to_string(img)
+print(text)
+
+# write a python program to detect the text from the image by 10 different methods
+import pytesseract
+from PIL import Image
+img = Image.open('/home/ai21/Desktop/common/ML/Day10/image.jpg')
+text = pytesseract.image_to_string(img)
+print(text)
+
+# write a python program to detect the text from the image by 10 different methods
+import pytesseract
+from PIL import Image
+img = Image.open('/home/ai21/Desktop/common/ML/Day10/image.jpg')
+text = pytesseract.image_to_string(img)
+print(text)
+
+# write a python program to detect the text from the image by 10 different methods
+import pytesseract
+from PIL import Image
+img = Image.open('/home/ai21/Desktop/common/ML/Day10/image.jpg')
+text = pytesseract.image_to_string(img)
+print(text)
+
+# write a python program to detect the text from the image by 10 different methods
+import pytesseract
+from PIL import Image
+img = Image.open('/home/ai21/Desktop/common/ML/Day10/image.jpg')
+text = pytesseract.image_to_string(img)
+print(text)
+
+# write a python program to detect the text from the image by 10 different methods
+import pytesseract
+from PIL import Image
+img = Image.open('/home/ai21/Desktop/common/ML/Day10/image.jpg')
+text = pytesseract.image_to_string(img)
+print(text)
+
+# write a python program to detect the text from the image by 10 different methods
+import pytesseract
+from PIL import Image
+img = Image.open('/home/ai21/Desktop/common/ML/Day10/image.jpg')
+text = pytesseract.image_to_string(img)
+print(text)
+
+# write a python program to detect the text from the image by 10 different methods
+import pytesseract
+from PIL import Image
+img = Image.open('/home/ai21/Desktop/common/ML/Day10/image.jpg')
+text = pytesseract.image_to_string(img)
+print(text)
+
+# write a python program to detect the text from the image by 10 different methods
+import pytesseract
+from PIL import Image
+img = Image.open('/home/ai21/Desktop/common/ML/Day10/image.jpg')
+text = pytesseract.image_to_string(img)
+print(text)
+
+# write a python program to detect the text from the image by 10 different methods
+import pytesseract
+from PIL import Image
+img = Image.open('/home/ai21/Desktop/common/ML/Day10/image.jpg')
+text = pytesseract.image_to_string(img)
+print(text)
+
+# write a python program to detect the text from the image by 10 different methods
+import pytesseract
+from PIL import Image
+img = Image.open('/home/ai21/Desktop/common/ML/Day10/image.jpg')
+text = pytesseract.image_to_string(img)
+print(text)
+
+# write a python program to detect the text from the image by 10 different methods
+import pytesseract
+from PIL import Image
+img = Image.open('/home/ai21/Desktop/common/ML/Day10/image.jpg')
+text = pytesseract.image_to_string(img)
+print(text)
+
+# write a python program to detect the text from the image by 10 different methods
+import pytesseract
+from PIL import Image
+img = Image.open('/home/ai21/Desktop/common/ML/Day10/image.jpg')
+text = pytesseract.image_to_string(img)
+print(text)
+
+# write a python program to detect the text from the image by 10 different methods
+import pytesseract
+from PIL import Image
+img = Image.open('/home/ai21/Desktop/common/ML/Day10/image.jpg')
+text = pytesseract.image_to_string(img)
+print(text)
+
+# write a python program to detect the text from the image by 10 different methods
+import pytesseract
+from PIL import Image
+img = Image.open('/home/ai21/Desktop/common/ML/Day10/image.jpg')
+text = pytesseract.image_to_string(img)
+print(text)
+
+# write a python program to detect the text from the image by 10 different methods
+import pytesseract
+from PIL import Image
+img = Image.open('/home/ai21/Desktop/common/ML/Day10/image.jpg')
+text = pytesseract.image_to_string(img)
+print(text)
+
+# write a python program to detect the text from the image by 10 different methods
+import pytesseract
+from PIL import Image
+img = Image.open('/home/ai21/Desktop/common/ML/Day10/image.jpg')
+text = pytesseract.image_to_string(img)
+print(text)
+
+# write a python program to detect the text from the image by 10 different methods
+import pytesseract
+from PIL import Image
+img = Image.open('/home/ai21/Desktop/common/ML/Day10/image.jpg')
+text = pytesseract.image_to_string(img)
+print(text)
+
+# write a python program to detect the text from the image by 10 different methods
+import pytesseract
+from PIL import Image
+img = Image.open('/home/ai21/Desktop/common/ML/Day10/image.jpg')
+text = pytesseract.image_to_string(img)
+print(text)
+
+# write a python program to detect the text from the image by 10 different methods
+import pytesseract
+from PIL import Image
+img = Image.open('/home/ai21/Desktop/common/ML/Day10/image.jpg')
+text = pytesseract.image_to_string(img)
+print(text)
+
+# write a python program to detect the text from the image by 10 different methods
+import pytesseract
+from PIL import Image
+img = Image.open('/home/ai21/Desktop/common/ML/Day10/image.jpg')
+text = pytesseract.image_to_string(img)
+print(text)
+
+# write a python program to detect the text from the image by 10 different methods
+import pytesseract
+from PIL import Image
+img = Image.open('/home/ai21/Desktop/common/ML/Day10/image.jpg')
+text = pytesseract.image_to_string(img)
+print(text)
+
+# write a python program to detect the text from the image by 10 different methods
+import pytesseract
+from PIL import Image
+img = Image.open('/home/ai21/Desktop/common/ML/Day10/image.jpg')
+text = pytesseract.image_to_string(img)
+print(text)
+
+# write a python program to detect the text from the image by 10 different methods
+import pytesseract
+from PIL import Image
+img = Image.open('/home/ai21/Desktop/common/ML/Day10/image.jpg')
+text = pytesseract.image_to_string(img)
+print(text)
+
+# write a python program to detect the text from the image by 10 different methods
+import pytesseract
+from PIL import Image
+img = Image.open('/home/ai21/Desktop/common/ML/Day10/image.jpg')
+text = pytesseract.image_to_string(img)
+print(text)
+
+# write a python program to detect the text from the image by 10 different methods
+import pytesseract
+from PIL import Image
+img = Image.open('/home/ai21/Desktop/common/ML/Day10/image.jpg')
+text = pytesseract.image_to_string(img)
+print(text)
+
+# write a python program to detect the text from the image by 10 different methods
+import pytesseract
+from PIL import Image
+img = Image.open('/home/ai21/Desktop/common/ML/Day10/image.jpg')
+text = pytesseract.image_to_string(img)
+print(text)
+
+# write a python program to detect the text from the image by 10 different methods
+import pytesseract
+from PIL import Image
+img = Image.open('/home/ai21/Desktop/common/ML/Day10/image.jpg')
+text = pytesseract.image_to_string(img)
+print(text)
+
+# write a python program to detect the text from the image by 10 different methods
+import pytesseract
+from PIL import Image
+img = Image.open('/home/ai21/Desktop/common/ML/Day10/image.jpg')
+text = pytesseract.image_to_string(img)
+print(text)
+
+# write a python program to detect the text from the image by 10 different methods
+import pytesseract
+from PIL import Image
+img = Image.open('/home/ai21/Desktop/common/ML/Day10/image.jpg')
+text = pytesseract.image_to_string(img)
+print(text)
+
+# write a python program to detect the text from the image by 10 different methods
+import pytesseract
+from PIL import Image
+img = Image.open('/home/ai21/Desktop/common/ML/Day10/image.jpg')
+text = pytesseract.image_to_string(img)
+print(text)
+
+# write a python program to detect the text from the image by 10 different methods
+import pytesseract
+from PIL import Image
+img = Image.open('/home/ai21/Desktop/common/ML/Day10/image.jpg')
+text = pytesseract.image_to_string(img)
+print(text)
+
+# write a python program to detect the text from the image by 10 different methods
+import pytesseract
+from PIL import Image
+img = Image.open('/home/ai21/Desktop/common/ML/Day10/image.jpg')
+text = pytesseract.image_to_string(img)
+print(text)
+
+# write a python program to detect the text from the image by 10 different methods
+import pytesseract
+from PIL import Image
+img = Image.open('/home/ai21/Desktop/common/ML/Day10/image.jpg')
+text = pytesseract.image_to_string(img)
+print(text)
+
+# write a python program to detect the text from the image by 10 different methods
+import pytesseract
+from PIL import Image
+img = Image.open('/home/ai21/Desktop/common/ML/Day10/image.jpg')
+text = pytesseract.image_to_string(img)
+print(text)
+
+# write a python program to detect the text from the image by 10 different methods
+import pytesseract
+from PIL import Image
+img = Image.open('/home/ai21/Desktop/common/ML/Day10/image.jpg')
+text = pytesseract.image_to_string(img)
+print(text)
+
+# write a python program to detect the text from the image by 10 different methods
+import pytesseract
+from PIL import Image
+img = Image.open('/home/ai21/Desktop/common/ML/Day10/image.jpg')
+text = pytesseract.image_to_string(img)
+print(text)
+
+# write a python program to detect the text from the image by 10 different methods
+import pytesseract
+from PIL import Image
+img = Image.open('/home/ai21/Desktop/common/ML/Day10/image.jpg')
+text = pytesseract.image_to_string(img)
+print(text)
+
+# write a python program to detect the text from the image by 10 different methods
+import pytesseract
+from PIL import Image
+img = Image.open('/home/ai21/Desktop/common/ML/Day10/image.jpg')
+text = pytesseract.image_to_string(img)
+print(text)
+
+# write a python program to detect the text from the image by 10 different methods
+import pytesseract
+from PIL import Image
+img = Image.open('/home/ai21/Desktop/common/ML/Day10/image.jpg')
+text = pytesseract.image_to_string(img)
+print(text)
+
+# write a python program to detect the text from the image by 10 different methods
+import pytesseract
+from PIL import Image
+img = Image.open('/home/ai21/Desktop/common/ML/Day10/image.jpg')
+text = pytesseract.image_to_string(img)
+print(text)
+
+# write a python program to detect the text from the image by 10 different methods
+import pytesseract
+from PIL import Image
+img = Image.open('/home/ai21/Desktop/common/ML/Day10/image.jpg')
+text = pytesseract.image_to_string(img)
+print(text)
+
+# write a python program to detect the text from the image by 10 different methods
+import pytesseract
+from PIL import Image
+img = Image.open('/home/ai21/Desktop/common/ML/Day10/image.jpg')
+text = pytesseract.image_to_string(img)
+print(text)
+
+# write a python program to detect the text from the image by 10 different methods
+import pytesseract
+from PIL import Image
+img = Image.open('/home/ai21/Desktop/common/ML/Day10/image.jpg')
+text = pytesseract.image_to_string(img)
+print(text)
+
+# write a python program to detect the text from the image by 10 different methods
+import pytesseract
+from PIL import Image
+img = Image.open('/home/ai21/Desktop/common/ML/Day10/image.jpg')
+text = pytesseract.image_to_string(img)
+print(text)
+
+# write a python program to detect the text from the image by 10 different methods
+import pytesseract
+from PIL import Image
+img = Image.open('/home/ai21/Desktop/common/ML/Day10/image.jpg')
+text = pytesseract.image_to_string(img)
+print(text)
+
+# write a python program to detect the text from the image by 10 different methods
+import pytesseract
+from PIL import Image
+img = Image.open('/home/ai21/Desktop/common/ML/Day10/image.jpg')
+text = pytesseract.image_to_string(img)
+print(text)
+
+# write a python program to detect the text from the image by 10 different methods
+import pytesseract
+from PIL import Image
+img = Image.open('/home/ai21/Desktop/common/ML/Day10/image.jpg')
+text = pytesseract
