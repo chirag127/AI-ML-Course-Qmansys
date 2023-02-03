@@ -14,7 +14,10 @@ from keras.utils import np_utils
 # pd.set_option('display.max_columns', 500)
 # pd.set_option('display.width', 1000)
 
+# Reading the csv file and storing it in a dataframe.
+# Reading the csv file and storing it in a dataframe.
 df = pd.read_csv("fer2013.csv")
+
 
 # print(df.info())
 # print(df["Usage"].value_counts())
@@ -31,7 +34,8 @@ for index, row in df.iterrows():
         elif "PublicTest" in row["Usage"]:
             X_test.append(np.array(val, "float32"))
             test_y.append(row["emotion"])
-    except:
+    except Exception as error: # pylint: disable=broad-except
+        print(f"Error occured at index: {index} with error: {error}")
         print(f"error occured at index :{index} and row:{row}")
 
 

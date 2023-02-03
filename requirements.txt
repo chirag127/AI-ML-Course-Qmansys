@@ -23,3 +23,5 @@ opencv-python
 opencv-python-headless
 scikit-image
 tensorflow
+imutils
+ploomber
