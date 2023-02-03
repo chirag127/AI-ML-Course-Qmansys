@@ -1,32 +1,4 @@
 {
-  "editor.tabCompletion": "on",
-  "diffEditor.codeLens": true,
-  "cSpell.words": [
-    "astype",
-    "availaible",
-    "caffemodel",
-    "Compliling",
-    "crossentropy",
-    "etcetra",
-    "gtts",
-    "imshow",
-    "imutils",
-    "indx",
-    "iterrows",
-    "keras",
-    "mobilenet",
-    "oand",
-    "occured",
-    "playsound",
-    "preds",
-    "prototxt",
-    "Qmansys",
-    "regularizers",
-    "relu",
-    "softmax",
-    "startfile",
-    "WINWORD",
-    "wolframalpha",
-    "WOLFRAMALPHA"
-  ]
+    "editor.tabCompletion": "on",
+    "diffEditor.codeLens": true
 }
