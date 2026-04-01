@@ -2,13 +2,14 @@
 # python motion_detector.py
 # python motion_detector.py --video videos/example_01.mp4
 
-# import the necessary packages
-from imutils.video import VideoStream
 import argparse
 import datetime
-import imutils
 import time
+
 import cv2
+import imutils
+# import the necessary packages
+from imutils.video import VideoStream
 
 # construct the argument parser and parse the arguments
 ap = argparse.ArgumentParser()
@@ -70,7 +71,7 @@ while True:
 
         # compute the bounding box for the contour, draw it on the frame,
         # and update the text
-        (x, y, w, h) = cv2.boundingRect(c)
+        x, y, w, h = cv2.boundingRect(c)
         cv2.rectangle(frame, (x, y), (x + w, y + h), (0, 255, 0), 2)
         text = "Occupied"
 

@@ -1,13 +1,14 @@
 # USAGE
 # python yolo_video.py --input videos/airport.mp4 --output output/airport_output.avi --yolo yolo-coco
 
+import argparse
+import os
+import time
+
+import cv2
+import imutils
 # import the necessary packages
 import numpy as np
-import argparse
-import imutils
-import time
-import cv2
-import os
 
 # construct the argument parse and parse the arguments
 ap = argparse.ArgumentParser()
@@ -53,7 +54,7 @@ ln = [ln[i[0] - 1] for i in net.getUnconnectedOutLayers()]
 # frame dimensions
 vs = cv2.VideoCapture(args["input"])
 writer = None
-(W, H) = (None, None)
+W, H = (None, None)
 
 # try to determine the total number of frames in the video file
 try:
@@ -71,7 +72,7 @@ except:
 # loop over frames from the video file stream
 while True:
     # read the next frame from the file
-    (grabbed, frame) = vs.read()
+    grabbed, frame = vs.read()
 
     # if the frame was not grabbed, then we have reached the end
     # of the stream
@@ -80,7 +81,7 @@ while True:
 
     # if the frame dimensions are empty, grab them
     if W is None or H is None:
-        (H, W) = frame.shape[:2]
+        H, W = frame.shape[:2]
 
     # construct a blob from the input frame and then perform a forward
     # pass of the YOLO object detector, giving us our bounding boxes
@@ -116,7 +117,7 @@ while True:
                 # the bounding box followed by the boxes' width and
                 # height
                 box = detection[:4] * np.array([W, H, W, H])
-                (centerX, centerY, width, height) = box.astype("int")
+                centerX, centerY, width, height = box.astype("int")
 
                 # use the center (x, y)-coordinates to derive the top
                 # and and left corner of the bounding box
@@ -138,8 +139,8 @@ while True:
         # loop over the indexes we are keeping
         for i in idxs.flatten():
             # extract the bounding box coordinates
-            (x, y) = (boxes[i][0], boxes[i][1])
-            (w, h) = (boxes[i][2], boxes[i][3])
+            x, y = (boxes[i][0], boxes[i][1])
+            w, h = (boxes[i][2], boxes[i][3])
 
             # draw a bounding box rectangle and label on the frame
             color = [int(c) for c in COLORS[classIDs[i]]]

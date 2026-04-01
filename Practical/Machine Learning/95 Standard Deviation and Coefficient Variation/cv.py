@@ -9,6 +9,7 @@ Created on Tue May  5 07:59:16 2020
 # of variation of given array.
 import math
 
+
 # Function to find mean of
 # given array.
 def mean(arr, n):

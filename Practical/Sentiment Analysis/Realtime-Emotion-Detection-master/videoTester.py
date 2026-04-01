@@ -1,4 +1,4 @@
-import os
+
 import cv2
 import numpy as np
 from keras.models import model_from_json
@@ -26,7 +26,7 @@ while True:
 
     faces_detected = face_haar_cascade.detectMultiScale(gray_img, 1.32, 5)
 
-    for (x, y, w, h) in faces_detected:
+    for x, y, w, h in faces_detected:
         cv2.rectangle(test_img, (x, y), (x + w, y + h), (255, 0, 0), thickness=7)
         roi_gray = gray_img[
             y : y + w, x : x + h

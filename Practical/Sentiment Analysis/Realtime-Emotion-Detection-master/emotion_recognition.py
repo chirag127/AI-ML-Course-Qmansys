@@ -1,13 +1,10 @@
-import sys, os
-import pandas as pd
-import numpy as np
 
-from keras.models import Sequential
-from keras.layers import Dense, Dropout, Activation, Flatten
-from keras.layers import Conv2D, MaxPooling2D, BatchNormalization, AveragePooling2D
+import numpy as np
+import pandas as pd
+from keras.layers import (Conv2D, Dense, Dropout, Flatten, MaxPooling2D)
 from keras.losses import categorical_crossentropy
+from keras.models import Sequential
 from keras.optimizers import Adam
-from keras.regularizers import l2
 from keras.utils import np_utils
 
 # pd.set_option('display.max_rows', 500)
@@ -34,7 +31,7 @@ for index, row in df.iterrows():
         elif "PublicTest" in row["Usage"]:
             X_test.append(np.array(val, "float32"))
             test_y.append(row["emotion"])
-    except Exception as error: # pylint: disable=broad-except
+    except Exception as error:  # pylint: disable=broad-except
         print(f"Error occured at index: {index} with error: {error}")
         print(f"error occured at index :{index} and row:{row}")
 

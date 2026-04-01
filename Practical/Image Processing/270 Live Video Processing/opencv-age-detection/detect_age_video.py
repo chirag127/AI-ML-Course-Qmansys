@@ -1,14 +1,15 @@
 # USAGE
 # python detect_age_video.py --face face_detector --age age_detector
 
+import argparse
+import os
+import time
+
+import cv2
+import imutils
+import numpy as np
 # import the necessary packages
 from imutils.video import VideoStream
-import numpy as np
-import argparse
-import imutils
-import time
-import cv2
-import os
 
 
 def detect_and_predict_age(frame, faceNet, ageNet, minConf=0.5):
@@ -29,7 +30,7 @@ def detect_and_predict_age(frame, faceNet, ageNet, minConf=0.5):
 
     # grab the dimensions of the frame and then construct a blob
     # from it
-    (h, w) = frame.shape[:2]
+    h, w = frame.shape[:2]
     blob = cv2.dnn.blobFromImage(frame, 1.0, (300, 300), (104.0, 177.0, 123.0))
 
     # pass the blob through the network and obtain the face detections
@@ -48,7 +49,7 @@ def detect_and_predict_age(frame, faceNet, ageNet, minConf=0.5):
             # compute the (x, y)-coordinates of the bounding box for
             # the object
             box = detections[0, 0, i, 3:7] * np.array([w, h, w, h])
-            (startX, startY, endX, endY) = box.astype("int")
+            startX, startY, endX, endY = box.astype("int")
 
             # extract the ROI of the face
             face = frame[startY:endY, startX:endX]
@@ -136,7 +137,7 @@ while True:
         # draw the bounding box of the face along with the associated
         # predicted age
         text = "{}: {:.2f}%".format(r["age"][0], r["age"][1] * 100)
-        (startX, startY, endX, endY) = r["loc"]
+        startX, startY, endX, endY = r["loc"]
         y = startY - 10 if startY > 20 else startY + 10
         cv2.rectangle(frame, (startX, startY), (endX, endY), (0, 0, 255), 2)
         cv2.putText(

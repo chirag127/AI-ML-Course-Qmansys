@@ -1,5 +1,6 @@
 import openai
 
+
 def get_text_from_openai(
     prompt_,
     model="code-davinci-002",
@@ -8,7 +9,6 @@ def get_text_from_openai(
     top_p=1,
     frequency_penalty=0,
     presence_penalty=0,
-
 ):
     number_of_characters = len(prompt_)
 
@@ -21,7 +21,10 @@ def get_text_from_openai(
     number_of_characters = len(prompt_)
 
     max_tokens = 7000 - number_of_characters // 4
-    OPENAI_API_KEYs = [ "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","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"]
+    OPENAI_API_KEYs = [
+        "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",
+        "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",
+    ]
 
     openai.api_key = "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"
     response = openai.Completion.create(
@@ -32,11 +35,10 @@ def get_text_from_openai(
         top_p=top_p,
         frequency_penalty=frequency_penalty,
         presence_penalty=presence_penalty,
-        stop=["\n\n\n", "###","\r\n\r\n\r\n"],
+        stop=["\n\n\n", "###", "\r\n\r\n\r\n"],
     )
 
     # pretty_print the response
-    import pprint
 
     # pprint.pprint(response)
 
@@ -44,10 +46,11 @@ def get_text_from_openai(
 
     print(f"text: {text}")
 
-    with open("openai_response.txt", "a",encoding="utf-8") as file:
+    with open("openai_response.txt", "a", encoding="utf-8") as file:
         file.write(text)
 
     return text
+
 
 prompt = "# write a python program to detect the text from the image by 10 different methods\nimport easyocr"
 a = get_text_from_openai(prompt)

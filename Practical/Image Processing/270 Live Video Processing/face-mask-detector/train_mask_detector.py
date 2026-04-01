@@ -1,28 +1,25 @@
 # USAGE
 # python train_mask_detector.py --dataset dataset
 
-# import the necessary packages
-from tensorflow.keras.preprocessing.image import ImageDataGenerator
-from tensorflow.keras.applications import MobileNetV2
-from tensorflow.keras.layers import AveragePooling2D
-from tensorflow.keras.layers import Dropout
-from tensorflow.keras.layers import Flatten
-from tensorflow.keras.layers import Dense
-from tensorflow.keras.layers import Input
-from tensorflow.keras.models import Model
-from tensorflow.keras.optimizers import Adam
-from tensorflow.keras.applications.mobilenet_v2 import preprocess_input
-from tensorflow.keras.preprocessing.image import img_to_array
-from tensorflow.keras.preprocessing.image import load_img
-from tensorflow.keras.utils import to_categorical
-from sklearn.preprocessing import LabelBinarizer
-from sklearn.model_selection import train_test_split
-from sklearn.metrics import classification_report
-from imutils import paths
-import matplotlib.pyplot as plt
-import numpy as np
 import argparse
 import os
+
+import matplotlib.pyplot as plt
+import numpy as np
+from imutils import paths
+from sklearn.metrics import classification_report
+from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import LabelBinarizer
+from tensorflow.keras.applications import MobileNetV2
+from tensorflow.keras.applications.mobilenet_v2 import preprocess_input
+from tensorflow.keras.layers import (AveragePooling2D, Dense, Dropout, Flatten,
+                                     Input)
+from tensorflow.keras.models import Model
+from tensorflow.keras.optimizers import Adam
+# import the necessary packages
+from tensorflow.keras.preprocessing.image import (ImageDataGenerator,
+                                                  img_to_array, load_img)
+from tensorflow.keras.utils import to_categorical
 
 # construct the argument parser and parse the arguments
 ap = argparse.ArgumentParser()
@@ -81,7 +78,7 @@ labels = to_categorical(labels)
 
 # partition the data into training and testing splits using 75% of
 # the data for training and the remaining 25% for testing
-(trainX, testX, trainY, testY) = train_test_split(
+trainX, testX, trainY, testY = train_test_split(
     data, labels, test_size=0.20, stratify=labels, random_state=42
 )
 

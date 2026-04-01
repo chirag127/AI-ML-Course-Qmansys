@@ -2,16 +2,17 @@
 # python blur_face_video.py --face face_detector --method simple
 # python blur_face_video.py --face face_detector --method pixelated
 
-# import the necessary packages
-from pyimagesearch.face_blurring import anonymize_face_pixelate
-from pyimagesearch.face_blurring import anonymize_face_simple
-from imutils.video import VideoStream
-import numpy as np
 import argparse
-import imutils
-import time
-import cv2
 import os
+import time
+
+import cv2
+import imutils
+import numpy as np
+from imutils.video import VideoStream
+# import the necessary packages
+from pyimagesearch.face_blurring import (anonymize_face_pixelate,
+                                         anonymize_face_simple)
 
 # construct the argument parse and parse the arguments
 ap = argparse.ArgumentParser()
@@ -64,7 +65,7 @@ while True:
 
     # grab the dimensions of the frame and then construct a blob
     # from it
-    (h, w) = frame.shape[:2]
+    h, w = frame.shape[:2]
     blob = cv2.dnn.blobFromImage(frame, 1.0, (300, 300), (104.0, 177.0, 123.0))
 
     # pass the blob through the network and obtain the face detections
@@ -83,7 +84,7 @@ while True:
             # compute the (x, y)-coordinates of the bounding box for
             # the object
             box = detections[0, 0, i, 3:7] * np.array([w, h, w, h])
-            (startX, startY, endX, endY) = box.astype("int")
+            startX, startY, endX, endY = box.astype("int")
 
             # extract the face ROI
             face = frame[startY:endY, startX:endX]

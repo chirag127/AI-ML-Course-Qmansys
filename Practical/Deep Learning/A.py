@@ -1,10 +1,10 @@
+from glob import iglob
+from pathlib import Path
+
 from ploomber import DAG
+from ploomber.executors import Parallel
 from ploomber.products import File
 from ploomber.tasks import NotebookRunner
-from ploomber.executors import Parallel
-
-from pathlib import Path
-from glob import iglob
 
 dag = DAG(executor=Parallel())
 

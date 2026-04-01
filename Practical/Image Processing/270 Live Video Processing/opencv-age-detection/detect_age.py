@@ -1,11 +1,12 @@
 # USAGE
 # python detect_age.py --image images/adrian.png --face face_detector --age age_detector
 
+import argparse
+import os
+
+import cv2
 # import the necessary packages
 import numpy as np
-import argparse
-import cv2
-import os
 
 # construct the argument parse and parse the arguments
 ap = argparse.ArgumentParser()
@@ -53,7 +54,7 @@ ageNet = cv2.dnn.readNet(prototxtPath, weightsPath)
 
 # load the input image and construct an input blob for the image
 image = cv2.imread(args["image"])
-(h, w) = image.shape[:2]
+h, w = image.shape[:2]
 blob = cv2.dnn.blobFromImage(image, 1.0, (300, 300), (104.0, 177.0, 123.0))
 
 # pass the blob through the network and obtain the face detections
@@ -73,7 +74,7 @@ for i in range(detections.shape[2]):
         # compute the (x, y)-coordinates of the bounding box for the
         # object
         box = detections[0, 0, i, 3:7] * np.array([w, h, w, h])
-        (startX, startY, endX, endY) = box.astype("int")
+        startX, startY, endX, endY = box.astype("int")
 
         # extract the ROI of the face and then construct a blob from
         # *only* the face ROI

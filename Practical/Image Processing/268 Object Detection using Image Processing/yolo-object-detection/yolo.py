@@ -1,12 +1,13 @@
 # USAGE
 # python yolo.py --image images/baggage_claim.jpg --yolo yolo-coco
 
+import argparse
+import os
+import time
+
+import cv2
 # import the necessary packages
 import numpy as np
-import argparse
-import time
-import cv2
-import os
 
 # construct the argument parse and parse the arguments
 ap = argparse.ArgumentParser()
@@ -46,7 +47,7 @@ net = cv2.dnn.readNetFromDarknet(configPath, weightsPath)
 
 # load our input image and grab its spatial dimensions
 image = cv2.imread(args["image"])
-(H, W) = image.shape[:2]
+H, W = image.shape[:2]
 
 # determine only the *output* layer names that we need from YOLO
 ln = net.getLayerNames()
@@ -88,7 +89,7 @@ for output in layerOutputs:
             # returns the center (x, y)-coordinates of the bounding
             # box followed by the boxes' width and height
             box = detection[:4] * np.array([W, H, W, H])
-            (centerX, centerY, width, height) = box.astype("int")
+            centerX, centerY, width, height = box.astype("int")
 
             # use the center (x, y)-coordinates to derive the top and
             # and left corner of the bounding box
@@ -110,8 +111,8 @@ if len(idxs) > 0:
     # loop over the indexes we are keeping
     for i in idxs.flatten():
         # extract the bounding box coordinates
-        (x, y) = (boxes[i][0], boxes[i][1])
-        (w, h) = (boxes[i][2], boxes[i][3])
+        x, y = (boxes[i][0], boxes[i][1])
+        w, h = (boxes[i][2], boxes[i][3])
 
         # draw a bounding box rectangle and label on the image
         color = [int(c) for c in COLORS[classIDs[i]]]

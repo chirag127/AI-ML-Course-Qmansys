@@ -2,13 +2,14 @@
 # python blur_face.py --image examples/adrian.jpg --face face_detector --method simple
 # python blur_face.py --image examples/adrian.jpg --face face_detector --method pixelated
 
-# import the necessary packages
-from pyimagesearch.face_blurring import anonymize_face_pixelate
-from pyimagesearch.face_blurring import anonymize_face_simple
-import numpy as np
 import argparse
-import cv2
 import os
+
+import cv2
+import numpy as np
+# import the necessary packages
+from pyimagesearch.face_blurring import (anonymize_face_pixelate,
+                                         anonymize_face_simple)
 
 # construct the argument parse and parse the arguments
 ap = argparse.ArgumentParser()
@@ -52,7 +53,7 @@ net = cv2.dnn.readNet(prototxtPath, weightsPath)
 # dimensions
 image = cv2.imread(args["image"])
 orig = image.copy()
-(h, w) = image.shape[:2]
+h, w = image.shape[:2]
 
 # construct a blob from the image
 blob = cv2.dnn.blobFromImage(image, 1.0, (300, 300), (104.0, 177.0, 123.0))
@@ -74,7 +75,7 @@ for i in range(detections.shape[2]):
         # compute the (x, y)-coordinates of the bounding box for the
         # object
         box = detections[0, 0, i, 3:7] * np.array([w, h, w, h])
-        (startX, startY, endX, endY) = box.astype("int")
+        startX, startY, endX, endY = box.astype("int")
 
         # extract the face ROI
         face = image[startY:endY, startX:endX]

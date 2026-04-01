@@ -2,15 +2,16 @@
 # python social_distance_detector.py --input pedestrians.mp4
 # python social_distance_detector.py --input pedestrians.mp4 --output output.avi
 
+import argparse
+import os
+
+import cv2
+import imutils
+import numpy as np
 # import the necessary packages
 from pyimagesearch import social_distancing_config as config
 from pyimagesearch.detection import detect_people
 from scipy.spatial import distance as dist
-import numpy as np
-import argparse
-import imutils
-import cv2
-import os
 
 # construct the argument parse and parse the arguments
 ap = argparse.ArgumentParser()
@@ -60,7 +61,7 @@ writer = None
 # loop over the frames from the video stream
 while True:
     # read the next frame from the file
-    (grabbed, frame) = vs.read()
+    grabbed, frame = vs.read()
 
     # if the frame was not grabbed, then we have reached the end
     # of the stream
@@ -96,11 +97,11 @@ while True:
                     violate.add(j)
 
     # loop over the results
-    for (i, (prob, bbox, centroid)) in enumerate(results):
+    for i, (prob, bbox, centroid) in enumerate(results):
         # extract the bounding box and centroid coordinates, then
         # initialize the color of the annotation
-        (startX, startY, endX, endY) = bbox
-        (cX, cY) = centroid
+        startX, startY, endX, endY = bbox
+        cX, cY = centroid
         color = (0, 255, 0)
 
         # if the index pair exists within the violation set, then

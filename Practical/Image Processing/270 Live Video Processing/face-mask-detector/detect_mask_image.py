@@ -1,14 +1,15 @@
 # USAGE
 # python detect_mask_image.py --image examples/example_01.png
 
+import argparse
+import os
+
+import cv2
+import numpy as np
 # import the necessary packages
 from tensorflow.keras.applications.mobilenet_v2 import preprocess_input
-from tensorflow.keras.preprocessing.image import img_to_array
 from tensorflow.keras.models import load_model
-import numpy as np
-import argparse
-import cv2
-import os
+from tensorflow.keras.preprocessing.image import img_to_array
 
 # construct the argument parser and parse the arguments
 ap = argparse.ArgumentParser()
@@ -52,7 +53,7 @@ model = load_model(args["model"])
 # dimensions
 image = cv2.imread(args["image"])
 orig = image.copy()
-(h, w) = image.shape[:2]
+h, w = image.shape[:2]
 
 # construct a blob from the image
 blob = cv2.dnn.blobFromImage(image, 1.0, (300, 300), (104.0, 177.0, 123.0))
@@ -74,12 +75,12 @@ for i in range(detections.shape[2]):
         # compute the (x, y)-coordinates of the bounding box for
         # the object
         box = detections[0, 0, i, 3:7] * np.array([w, h, w, h])
-        (startX, startY, endX, endY) = box.astype("int")
+        startX, startY, endX, endY = box.astype("int")
 
         # ensure the bounding boxes fall within the dimensions of
         # the frame
-        (startX, startY) = (max(0, startX), max(0, startY))
-        (endX, endY) = (min(w - 1, endX), min(h - 1, endY))
+        startX, startY = (max(0, startX), max(0, startY))
+        endX, endY = (min(w - 1, endX), min(h - 1, endY))
 
         # extract the face ROI, convert it from BGR to RGB channel
         # ordering, resize it to 224x224, and preprocess it
@@ -92,7 +93,7 @@ for i in range(detections.shape[2]):
 
         # pass the face through the model to determine if the face
         # has a mask or not
-        (mask, withoutMask) = model.predict(face)[0]
+        mask, withoutMask = model.predict(face)[0]
 
         # determine the class label and color we'll use to draw
         # the bounding box and text

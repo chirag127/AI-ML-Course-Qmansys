@@ -8,11 +8,9 @@ Created on Tue May  5 07:58:40 2020
 # Python code to demonstrate stdev()
 # function on varioius range of datasets
 
+# importing frations as parameter values
 # importing the statistics module
 from statistics import stdev
-
-# importing frations as parameter values
-from fractions import Fraction as fr
 
 # creating a varying range of sample sets
 # numbers are spread apart but not very much

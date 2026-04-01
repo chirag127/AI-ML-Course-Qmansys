@@ -1,23 +1,24 @@
 # USAGE
 # python detect_mask_video.py
 
+import argparse
+import os
+import time
+
+import cv2
+import imutils
+import numpy as np
+from imutils.video import VideoStream
 # import the necessary packages
 from tensorflow.keras.applications.mobilenet_v2 import preprocess_input
-from tensorflow.keras.preprocessing.image import img_to_array
 from tensorflow.keras.models import load_model
-from imutils.video import VideoStream
-import numpy as np
-import argparse
-import imutils
-import time
-import cv2
-import os
+from tensorflow.keras.preprocessing.image import img_to_array
 
 
 def detect_and_predict_mask(frame, faceNet, maskNet):
     # grab the dimensions of the frame and then construct a blob
     # from it
-    (h, w) = frame.shape[:2]
+    h, w = frame.shape[:2]
     blob = cv2.dnn.blobFromImage(frame, 1.0, (300, 300), (104.0, 177.0, 123.0))
 
     # pass the blob through the network and obtain the face detections
@@ -40,12 +41,12 @@ def detect_and_predict_mask(frame, faceNet, maskNet):
             # compute the (x, y)-coordinates of the bounding box for
             # the object
             box = detections[0, 0, i, 3:7] * np.array([w, h, w, h])
-            (startX, startY, endX, endY) = box.astype("int")
+            startX, startY, endX, endY = box.astype("int")
 
             # ensure the bounding boxes fall within the dimensions of
             # the frame
-            (startX, startY) = (max(0, startX), max(0, startY))
-            (endX, endY) = (min(w - 1, endX), min(h - 1, endY))
+            startX, startY = (max(0, startX), max(0, startY))
+            endX, endY = (min(w - 1, endX), min(h - 1, endY))
 
             # extract the face ROI, convert it from BGR to RGB channel
             # ordering, resize it to 224x224, and preprocess it
@@ -118,14 +119,14 @@ while True:
 
     # detect faces in the frame and determine if they are wearing a
     # face mask or not
-    (locs, preds) = detect_and_predict_mask(frame, faceNet, maskNet)
+    locs, preds = detect_and_predict_mask(frame, faceNet, maskNet)
 
     # loop over the detected face locations and their corresponding
     # locations
-    for (box, pred) in zip(locs, preds):
+    for box, pred in zip(locs, preds):
         # unpack the bounding box and predictions
-        (startX, startY, endX, endY) = box
-        (mask, withoutMask) = pred
+        startX, startY, endX, endY = box
+        mask, withoutMask = pred
 
         # determine the class label and color we'll use to draw
         # the bounding box and text
