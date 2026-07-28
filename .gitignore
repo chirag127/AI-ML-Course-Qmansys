@@ -181,3 +181,7 @@ cython_debug/
 .tmp*
 
 glove.6B.300d.txt
+# Audio/video binaries
+*.mp3
+*.mp4
+*.wav
