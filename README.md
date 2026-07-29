@@ -2,13 +2,13 @@
 
 [![GitHub stars](https://img.shields.io/github/stars/chirag127/ml-notebooks?style=flat-square)](https://github.com/chirag127/ml-notebooks)
 [![License](https://img.shields.io/github/license/chirag127/ml-notebooks?style=flat-square)](LICENSE)
-[![GH Pages](https://img.shields.io/badge/site-live-brightgreen?style=flat-square)](https://chirag127.github.io/ml-notebooks/)
+[![GH Pages](https://img.shields.io/badge/site-live-brightgreen?style=flat-square)](https://ml-notebooks.oriz.in)
 
 Jupyter notebooks implementing ML/AI algorithms — Deep Learning, CNN, NLP, scikit-learn.
 
 ## Live Site
 
-**https://chirag127.github.io/ml-notebooks/**
+**https://ml-notebooks.oriz.in**
 
 ## Contents
 
@@ -29,7 +29,7 @@ Located in `Practical/` organized by category.
 ## Setup
 
 ```bash
-pip install jupyter numpy pandas scikit-learn tensorflow keras matplotlib
+pip install -r requirements.txt
 jupyter notebook
 ```
 
